@@ -161,4 +161,8 @@ public class ShabatElev3Algo implements ElevatorAlgo {
         ans = ans + (int)(r);
         return ans;
     }
+
+    public static void main(String[] args) {
+        System.out.println("hi");
+    }
 }
