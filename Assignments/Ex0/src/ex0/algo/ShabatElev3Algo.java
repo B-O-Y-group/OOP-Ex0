@@ -163,6 +163,6 @@ public class ShabatElev3Algo implements ElevatorAlgo {
     }
 
     public static void main(String[] args) {
-        System.out.println("hi");
+        System.out.println("hii");
     }
 }
