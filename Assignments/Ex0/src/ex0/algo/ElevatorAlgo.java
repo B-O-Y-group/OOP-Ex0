@@ -8,6 +8,7 @@ import ex0.CallForElevator;
  * It assumes online algorithm.
  */
 public interface ElevatorAlgo {
+
     /**
      * @return the Building on which the (online) elevator algorithm works on.
      */
