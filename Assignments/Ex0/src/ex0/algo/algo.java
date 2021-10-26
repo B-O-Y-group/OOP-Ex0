@@ -34,6 +34,7 @@ public class algo implements  ElevatorAlgo{
     @Override
     public int allocateAnElevator(CallForElevator c) {
         int ans = 0;
+        return ans;
     }
 
     @Override
