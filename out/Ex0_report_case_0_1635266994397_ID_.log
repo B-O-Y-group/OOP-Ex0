@@ -8,11 +8,11 @@
 0.0, elevID,0,  pos,0,  cmd, goto,0
 1.0,Elevator call,0.437472729039321,0,1,1,0, got allocated to elevator, 0
 1.0,Elev,0,  arrived at src, 0, Elevator call,0.437472729039321,0,1,2,0
-1.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 2.0, elevID,0,  pos,0,  cmd, goto,0
 3.0,Elevator call,2.2094056301593525,0,1,1,0, got allocated to elevator, 0
 3.0,Elev,0,  arrived at src, 0, Elevator call,2.2094056301593525,0,1,2,0
-3.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 4.0, elevID,0,  pos,0,  cmd, goto,0
 5.0, elevID,0,  pos,0,  cmd, goto,0
 6.0, elevID,0,  pos,0,  cmd, goto,0
@@ -29,10 +29,10 @@
 17.0, elevID,0,  pos,0,  cmd, goto,0
 18.0, elevID,0,  pos,0,  cmd, goto,0
 19.0,Elevator call,18.77299317966884,1,0,1,0, got allocated to elevator, 0
-19.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,1,  the elevator is not moving!
 20.0,Elevator call,19.590869649656987,0,1,1,0, got allocated to elevator, 0
 20.0,Elev,0,  arrived at src, 0, Elevator call,19.590869649656987,0,1,2,0
-20.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 21.0, elevID,0,  pos,0,  cmd, goto,0
 22.0, elevID,0,  pos,0,  cmd, goto,0
 23.0, elevID,0,  pos,0,  cmd, goto,0
@@ -44,13 +44,13 @@
 29.0, elevID,0,  pos,0,  cmd, goto,0
 30.0,Elevator call,29.579433566814906,0,1,1,0, got allocated to elevator, 0
 30.0,Elev,0,  arrived at src, 0, Elevator call,29.579433566814906,0,1,2,0
-30.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 31.0, elevID,0,  pos,0,  cmd, goto,0
 32.0, elevID,0,  pos,0,  cmd, goto,0
 33.0, elevID,0,  pos,0,  cmd, goto,0
 34.0,Elevator call,33.242673193933555,0,1,1,0, got allocated to elevator, 0
 34.0,Elev,0,  arrived at src, 0, Elevator call,33.242673193933555,0,1,2,0
-34.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 35.0, elevID,0,  pos,0,  cmd, goto,0
 36.0, elevID,0,  pos,0,  cmd, goto,0
 37.0, elevID,0,  pos,0,  cmd, goto,0
@@ -71,7 +71,7 @@
 52.0, elevID,0,  pos,0,  cmd, goto,0
 53.0,Elevator call,52.96277472128405,0,1,1,0, got allocated to elevator, 0
 53.0,Elev,0,  arrived at src, 0, Elevator call,52.96277472128405,0,1,2,0
-53.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
 54.0, elevID,0,  pos,0,  cmd, goto,0
 55.0, elevID,0,  pos,0,  cmd, goto,0
 56.0, elevID,0,  pos,0,  cmd, goto,0
@@ -84,7 +84,7 @@
 63.0, elevID,0,  pos,0,  cmd, goto,0
 64.0, elevID,0,  pos,0,  cmd, goto,0
 65.0,Elevator call,64.38547514955395,1,0,1,0, got allocated to elevator, 0
-65.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,1,  the elevator is not moving!
 66.0, elevID,0,  pos,0,  cmd, goto,0
 67.0, elevID,0,  pos,0,  cmd, goto,0
 68.0, elevID,0,  pos,0,  cmd, goto,0
@@ -93,7 +93,7 @@
 71.0, elevID,0,  pos,0,  cmd, goto,0
 72.0, elevID,0,  pos,0,  cmd, goto,0
 73.0,Elevator call,72.26161212799506,1,0,1,0, got allocated to elevator, 0
-73.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,1,  the elevator is not moving!
 74.0, elevID,0,  pos,0,  cmd, goto,0
 75.0, elevID,0,  pos,0,  cmd, goto,0
 76.0, elevID,0,  pos,0,  cmd, goto,0
@@ -102,7 +102,7 @@
 79.0, elevID,0,  pos,0,  cmd, goto,0
 80.0, elevID,0,  pos,0,  cmd, goto,0
 81.0,Elevator call,80.56754743307536,1,0,1,0, got allocated to elevator, 0
-81.0, elevID,0,  pos,0,  cmd, goto,0
+, elevID,0,  pos,0,  WRONG cmd, stop,1,  the elevator is not moving!
 82.0, elevID,0,  pos,0,  cmd, goto,0
 83.0, elevID,0,  pos,0,  cmd, goto,0
 84.0, elevID,0,  pos,0,  cmd, goto,0

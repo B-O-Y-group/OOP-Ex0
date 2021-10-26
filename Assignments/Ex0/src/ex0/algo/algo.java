@@ -94,13 +94,13 @@ public class algo implements ElevatorAlgo {
 
             if (curr.getState() == UP) {
                 if (pos >= first_F) {
-                    E_List.get(elev).queue.removeFirst();
                     curr.stop(first_F);
+                    E_List.get(elev).queue.removeFirst();
                 }
             } else {
                 if (pos <= first_F) {
-                    E_List.get(elev).queue.removeFirst();
                     curr.stop(first_F);
+                    E_List.get(elev).queue.removeFirst();
                 }
             }
             if (!E_List.get(elev).queue.isEmpty()) {

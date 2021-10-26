@@ -26,7 +26,8 @@ public class FloorQueue {
 
 
     public void push() {
-        if (!queue.isEmpty()) {
+        System.out.println("first" + queue.toString());
+        if (!queue.isEmpty() && !queue.contains(floor)) {
             boolean added = false;
             for (int i = 0; i < queue.size() && !added; i++) {
                 if (range(floor, pos) < range(queue.get(i), pos)) {
@@ -41,7 +42,7 @@ public class FloorQueue {
             queue.addFirst(floor);
         }
 
-
+        System.out.println(queue.toString());
     }
 
 
