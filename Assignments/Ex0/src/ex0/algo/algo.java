@@ -13,6 +13,7 @@ public class algo implements ElevatorAlgo {
     public int direction;
     int allo;
     ArrayList<FloorQueue> E_List;
+    private boolean[] _firstTime;
 
 
     public algo(Building b) {
@@ -20,6 +21,10 @@ public class algo implements ElevatorAlgo {
         E_List = new ArrayList<>();
         this.direction = UP;
         allo = 0;
+        _firstTime = new boolean[building.numberOfElevetors()];
+        for (int i = 0; i < _firstTime.length; i++) {
+            _firstTime[i] = true;
+        }
 
         for (int i = 0; i < b.numberOfElevetors(); i++) {
             FloorQueue e = new FloorQueue(this.building.getElevetor(i));
@@ -49,14 +54,14 @@ public class algo implements ElevatorAlgo {
                 min = timeToSrc(i, c);
                 best_ele = i;
             }
-
-                this.E_List.get(best_ele).setFloor(c.getSrc());
-            return best_ele;
-
-
         }
 
+        this.E_List.get(best_ele).setFloor(c.getSrc());
+        this.E_List.get(best_ele).push();
+        return best_ele;
+
     }
+
 
     public double timeToSrc(int index, CallForElevator c) {
         Elevator curr = this.getBuilding().getElevetor(index);
@@ -82,16 +87,45 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public void cmdElevator(int elev) {
-        Elevator curr = this.building.getElevetor(elev);
-        int pos = curr.getPos();
-        int first_F = E_List.get(elev).queue.getFirst();
+        if (!_firstTime[elev] && !E_List.get(elev).queue.isEmpty()) {
+            Elevator curr = this.building.getElevetor(elev);
+            int pos = curr.getPos();
+            int first_F = E_List.get(elev).queue.getFirst();
 
-        if (curr.getState() == UP)
-            if (pos >= first_F) {
-                E_List.get(elev).queue.removeFirst();
-                curr.stop(first_F);
+            if (curr.getState() == UP) {
+                if (pos >= first_F) {
+                    E_List.get(elev).queue.removeFirst();
+                    curr.stop(first_F);
+                }
+            } else {
+                if (pos <= first_F) {
+                    E_List.get(elev).queue.removeFirst();
+                    curr.stop(first_F);
+                }
             }
-        curr.goTo(E_List.get(elev).queue.getFirst());
+            if (!E_List.get(elev).queue.isEmpty()) {
+                curr.goTo(E_List.get(elev).queue.getFirst());
+            }
 
+        } else {
+            _firstTime[elev] = false;
+            int min = this.building.minFloor(), max = this.building.maxFloor();
+            for (int i = 0; i < this.building.numberOfElevetors(); i++) {
+                Elevator curr = this.getBuilding().getElevetor(elev);
+                int floor = rand(min, max);
+                curr.goTo(floor);
+            }
+        }
+    }
+
+    public static int rand(int min, int max) {
+        if (max < min) {
+            throw new RuntimeException("ERR: wrong values for range max should be >= min");
+        }
+        int ans = min;
+        double dx = max - min;
+        double r = Math.random() * dx;
+        ans = ans + (int) (r);
+        return ans;
     }
 }

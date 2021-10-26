@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class FloorQueue {
-    LinkedList<Integer> queue;
+    LinkedList<Integer> queue = new LinkedList<>();
     int floor;
     int pos;
 
