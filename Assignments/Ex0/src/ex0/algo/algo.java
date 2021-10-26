@@ -3,15 +3,22 @@ package ex0.algo;
 import ex0.Building;
 import ex0.CallForElevator;
 
+import java.util.Arrays;
+
 public class algo implements  ElevatorAlgo{
     final  static  int UP= 1 , DOWN = -1;
     public Building building;
    // public int direction;
+    boolean [] floor ;
 
 
     public algo(Building b) {
         this.building = b;
+        int max = this.building.maxFloor();
+        int min = this.building.minFloor();
+        floor= new boolean[max-min+1];
      //   this.direction = UP;
+        Arrays.fill(floor, false);
     }
 
     @Override
@@ -21,12 +28,12 @@ public class algo implements  ElevatorAlgo{
 
     @Override
     public String algoName() {
-        return "Oron the gay ;";
+        return "algorithm : boy ";
     }
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
-        return 0;
+        int ans = 0;
     }
 
     @Override
