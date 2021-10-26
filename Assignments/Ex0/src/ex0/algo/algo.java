@@ -39,31 +39,35 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
-        int ans = 1;
-        this.E_List.get(ans).setFloor(c.getSrc());
-        return ans;
+
+
+        int num = this.building.numberOfElevetors();
+        double min = timeToSrc(0, c);
+        int best_ele = 0;
+        for (int i = 1; i < num; i++) {
+            if (min > timeToSrc(i, c)) {
+                min = timeToSrc(i, c);
+                best_ele = i;
+            }
+
+                this.E_List.get(best_ele).setFloor(c.getSrc());
+            return best_ele;
+
+
+        }
+
     }
-    private double dist(int src, int elev) {
-        double ans = -1;
-        Elevator thisElev = this.building.getElevetor(elev);
-        int pos = thisElev.getPos();
-        double speed = thisElev.getSpeed();
-        int min = this.building.minFloor(), max = this.building.maxFloor();
-        double up2down = (max-min)*speed;
-        double floorTime = speed+thisElev.getStopTime()+thisElev.getStartTime()+thisElev.getTimeForOpen()+thisElev.getTimeForClose();
-        if(elev%2==1) { // up
-            if(pos<=src) {ans = (src-pos)*floorTime;}
-            else {
-                ans = ((max-pos) + (pos-min))*floorTime + up2down;
-            }
-        }
-        else {
-            if(pos>=src) {ans = (pos-src)*floorTime;}
-            else {
-                ans = ((max-pos) + (pos-min))*floorTime + up2down;
-            }
-        }
-        return ans;
+
+    public double timeToSrc(int index, CallForElevator c) {
+        Elevator curr = this.getBuilding().getElevetor(index);
+        int q_size = E_List.get(index).queue.size() + 1;
+
+        double speed = curr.getSpeed();
+        double floor_time =
+                (curr.getStartTime() + curr.getTimeForClose() + curr.getStopTime() + curr.getTimeForOpen());
+        int range = Math.abs(curr.getPos() - c.getSrc());
+        return (q_size * floor_time + speed) * range;
+
     }
 
     public void index() {
@@ -83,10 +87,10 @@ public class algo implements ElevatorAlgo {
         int first_F = E_List.get(elev).queue.getFirst();
 
         if (curr.getState() == UP)
-        if (pos >= first_F) {
-            E_List.get(elev).queue.removeFirst();
-            curr.stop(first_F);
-        }
+            if (pos >= first_F) {
+                E_List.get(elev).queue.removeFirst();
+                curr.stop(first_F);
+            }
         curr.goTo(E_List.get(elev).queue.getFirst());
 
     }
