@@ -2,28 +2,29 @@ package ex0.algo;
 
 import ex0.Building;
 import ex0.CallForElevator;
+import ex0.Elevator;
 
 import java.util.Arrays;
 
-public class algo implements  ElevatorAlgo{
-    final  static  int UP= 1 , DOWN = -1;
+public class algo implements ElevatorAlgo {
+    final static int UP = 1, DOWN = -1;
     public Building building;
-   // public int direction;
-    boolean [] floor ;
+    // public int direction;
+    boolean[] floor;
 
 
     public algo(Building b) {
         this.building = b;
         int max = this.building.maxFloor();
         int min = this.building.minFloor();
-        floor= new boolean[max-min+1];
-     //   this.direction = UP;
+        floor = new boolean[max - min + 1];
+        //   this.direction = UP;
         Arrays.fill(floor, false);
     }
 
     @Override
     public Building getBuilding() {
-        return  this.building;
+        return this.building;
     }
 
     @Override
@@ -36,6 +37,16 @@ public class algo implements  ElevatorAlgo{
         int ans = 0;
         return ans;
     }
+
+    public void index() {
+        Elevator[] arr = new Elevator[this.building.numberOfElevetors()];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = this.building.getElevetor(i);
+        }
+
+
+    }
+
 
     @Override
     public void cmdElevator(int elev) {
