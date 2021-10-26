@@ -10,11 +10,13 @@ public class FloorQueue {
     LinkedList<Integer> queue;
     int floor;
     int pos;
-    CallForElevator c;
 
     public FloorQueue(Elevator e) {
-        this.floor = c.getSrc();
         this.pos = e.getPos();
+    }
+
+    public void setFloor(int new_src) {
+        this.floor = new_src;
     }
 
 
@@ -41,6 +43,7 @@ public class FloorQueue {
 
 
     }
+
 
 
 }
