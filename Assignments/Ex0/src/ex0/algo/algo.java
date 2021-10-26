@@ -4,22 +4,25 @@ import ex0.Building;
 import ex0.CallForElevator;
 import ex0.Elevator;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class algo implements ElevatorAlgo {
     final static int UP = 1, DOWN = -1;
     public Building building;
-    // public int direction;
-    boolean[] floor;
+    public int direction;
+    ArrayList<FloorQueue> E_List;
 
 
     public algo(Building b) {
         this.building = b;
-        int max = this.building.maxFloor();
-        int min = this.building.minFloor();
-        floor = new boolean[max - min + 1];
-        //   this.direction = UP;
-        Arrays.fill(floor, false);
+        E_List = new ArrayList<>();
+        this.direction = UP;
+
+        for (int i = 0; i < b.numberOfElevetors(); i++) {
+            FloorQueue e = new FloorQueue(this.building.getElevetor(i));
+            E_List.add(e);
+        }
     }
 
     @Override
@@ -50,6 +53,6 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public void cmdElevator(int elev) {
-
+        
     }
 }
