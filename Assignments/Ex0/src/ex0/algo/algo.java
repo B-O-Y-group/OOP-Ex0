@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class algo implements ElevatorAlgo {
     final static int UP = 1, DOWN = -1;
     public Building building;
-    public int direction;
+    //public int direction;
     int allo;
     ArrayList<FloorQueue> E_List;
     private boolean[] _firstTime;
@@ -19,12 +19,10 @@ public class algo implements ElevatorAlgo {
     public algo(Building b) {
         this.building = b;
         E_List = new ArrayList<>();
-        this.direction = UP;
+       // this.direction = UP;
         allo = 0;
         _firstTime = new boolean[building.numberOfElevetors()];
-        for (int i = 0; i < _firstTime.length; i++) {
-            _firstTime[i] = true;
-        }
+        Arrays.fill(_firstTime, true);
 
         for (int i = 0; i < b.numberOfElevetors(); i++) {
             FloorQueue e = new FloorQueue(this.building.getElevetor(i));
@@ -42,22 +40,39 @@ public class algo implements ElevatorAlgo {
         return "algorithm : boy ";
     }
 
+
     @Override
     public int allocateAnElevator(CallForElevator c) {
 
+        System.out.println("get time :" + c.getTime(c.getState()));
+
+
+        System.out.println("src :" + c.getSrc());
+        System.out.println("dest :" + c.getDest());
+        ;
 
         int num = this.building.numberOfElevetors();
         double min = timeToSrc(0, c);
         int best_ele = 0;
+
+        System.out.println("pos :" + this.building.getElevetor(best_ele).getPos());
+        System.out.println("state of elevator "  + " :" + this.building.getElevetor(best_ele).getState());
         for (int i = 1; i < num; i++) {
+            System.out.println("pos of the elevator " +i +" : " + this.building.getElevetor(i).getPos());
+            System.out.println("state of elevator " + i + " :" + this.building.getElevetor(i).getState());
             if (min > timeToSrc(i, c)) {
                 min = timeToSrc(i, c);
                 best_ele = i;
             }
         }
+        System.out.println("pos :" + this.building.getElevetor(best_ele).getPos());
+
+      //  if (c.getSrc()<c.getDest() && this.building.getElevetor(best_ele).getState()== 1)
+        //    this.building.getElevetor(best_ele).getState()
 
         this.E_List.get(best_ele).setFloor(c.getSrc());
         this.E_List.get(best_ele).push();
+        System.out.println("the chosen elevator is :" +best_ele);
         return best_ele;
 
     }
@@ -71,7 +86,7 @@ public class algo implements ElevatorAlgo {
         double floor_time =
                 (curr.getStartTime() + curr.getTimeForClose() + curr.getStopTime() + curr.getTimeForOpen());
         int range = Math.abs(curr.getPos() - c.getSrc());
-        return (q_size * floor_time + speed) * range;
+        return (q_size * (floor_time + speed)) * range;
 
     }
 
@@ -87,24 +102,21 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public void cmdElevator(int elev) {
+
+
         if (!_firstTime[elev] && !E_List.get(elev).queue.isEmpty()) {
             Elevator curr = this.building.getElevetor(elev);
             int pos = curr.getPos();
             int first_F = E_List.get(elev).queue.getFirst();
-
-            if (curr.getState() == UP) {
-                if (pos >= first_F) {
-                    curr.stop(first_F);
-                    E_List.get(elev).queue.removeFirst();
-                }
-            } else {
-                if (pos <= first_F) {
-                    curr.stop(first_F);
-                    E_List.get(elev).queue.removeFirst();
-                }
+            int last_F = E_List.get(elev).queue.getLast();
+            if (E_List.get(elev).queue.size() == 1) {
+                curr.goTo(first_F);
             }
-            if (!E_List.get(elev).queue.isEmpty()) {
-                curr.goTo(E_List.get(elev).queue.getFirst());
+          //  else if (pos == first_F) {
+            else {
+                E_List.get(elev).queue.removeFirst();
+                curr.goTo(last_F);
+                curr.stop(first_F);
             }
 
         } else {
