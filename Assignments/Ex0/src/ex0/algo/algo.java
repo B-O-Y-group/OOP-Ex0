@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class algo implements ElevatorAlgo {
     final static int UP = 1, DOWN = -1;
     public Building building;
-    public int direction;
+    //public int direction;
     int allo;
     ArrayList<FloorQueue> E_List;
     private boolean[] _firstTime;
@@ -19,12 +19,10 @@ public class algo implements ElevatorAlgo {
     public algo(Building b) {
         this.building = b;
         E_List = new ArrayList<>();
-        this.direction = UP;
+       // this.direction = UP;
         allo = 0;
         _firstTime = new boolean[building.numberOfElevetors()];
-        for (int i = 0; i < _firstTime.length; i++) {
-            _firstTime[i] = true;
-        }
+        Arrays.fill(_firstTime, true);
 
         for (int i = 0; i < b.numberOfElevetors(); i++) {
             FloorQueue e = new FloorQueue(this.building.getElevetor(i));
@@ -41,6 +39,7 @@ public class algo implements ElevatorAlgo {
     public String algoName() {
         return "algorithm : boy ";
     }
+
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
@@ -71,7 +70,7 @@ public class algo implements ElevatorAlgo {
         double floor_time =
                 (curr.getStartTime() + curr.getTimeForClose() + curr.getStopTime() + curr.getTimeForOpen());
         int range = Math.abs(curr.getPos() - c.getSrc());
-        return (q_size * floor_time + speed) * range;
+        return (q_size * (floor_time + speed)) * range;
 
     }
 
@@ -91,20 +90,15 @@ public class algo implements ElevatorAlgo {
             Elevator curr = this.building.getElevetor(elev);
             int pos = curr.getPos();
             int first_F = E_List.get(elev).queue.getFirst();
-
-            if (curr.getState() == UP) {
-                if (pos >= first_F) {
-                    curr.stop(first_F);
-                    E_List.get(elev).queue.removeFirst();
-                }
-            } else {
-                if (pos <= first_F) {
-                    curr.stop(first_F);
-                    E_List.get(elev).queue.removeFirst();
-                }
+            int last_F = E_List.get(elev).queue.getLast();
+            if (E_List.get(elev).queue.size() == 1) {
+                curr.goTo(first_F);
             }
-            if (!E_List.get(elev).queue.isEmpty()) {
-                curr.goTo(E_List.get(elev).queue.getFirst());
+          //  else if (pos == first_F) {
+            else {
+                E_List.get(elev).queue.removeFirst();
+                curr.goTo(last_F);
+                curr.stop(first_F);
             }
 
         } else {

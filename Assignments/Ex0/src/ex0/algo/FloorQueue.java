@@ -10,9 +10,11 @@ public class FloorQueue {
     LinkedList<Integer> queue = new LinkedList<>();
     int floor;
     int pos;
-
+    int direction ;
     public FloorQueue(Elevator e) {
         this.pos = e.getPos();
+        this.direction = e.getState();
+
     }
 
     public void setFloor(int new_src) {
@@ -22,6 +24,16 @@ public class FloorQueue {
 
     public static int range(int floor, int pos) {
         return Math.abs(floor - pos);
+    }
+
+
+
+    public int getDirection(){
+        return this.direction;
+    }
+
+    public void setDirection(int direction){
+        this.direction = direction;
     }
 
 
