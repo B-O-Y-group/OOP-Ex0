@@ -1,6 +1,7 @@
 package ex0.algo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ListOfStates {
 
@@ -36,11 +37,12 @@ public class ListOfStates {
     }
 
     public void add(int elev, String state) {
-        System.out.println(elev + state);
+        System.out.println("LIST_STATE " + elev + state);
         if (!inList(elev))
             switch (state) {
                 case "UP" -> {
                     UP.add(elev);
+                    System.out.println("UP LIST" + Arrays.toString(getUP().toArray()));
                 }
                 case "DOWN" -> {
                     DOWN.add(elev);

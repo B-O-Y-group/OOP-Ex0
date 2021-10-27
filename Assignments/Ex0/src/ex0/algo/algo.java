@@ -46,7 +46,10 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
+        //int best_ele = 0;
+        System.out.println("TIMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE " + c.getTime(0));
         int best_ele = bestElevator(E_States, c.getType(), c);
+
 
 
        /* System.out.println("get time :" + c.getTime(c.getState()));
@@ -84,11 +87,12 @@ public class algo implements ElevatorAlgo {
     }
 
     public int bestElevator(ListOfStates l, int state, CallForElevator c) {
+        Building curr = this.getBuilding();
         int best_ele = 0;
         if (state == -1 && !l.getDOWN().isEmpty()) {
             double best = timeCalc(l.getDOWN().get(0), c);
             for (int i = 1; i < l.getDOWN().size(); i++) {
-                if (timeCalc(l.getDOWN().get(i), c) < best) {
+                if (timeCalc(l.getDOWN().get(i), c) < best && curr.getElevetor(l.getDOWN().get(i)).getPos() < c.getSrc()) {
                     best = timeCalc(l.getDOWN().get(i), c);
                     best_ele = i;
                 }
@@ -96,7 +100,7 @@ public class algo implements ElevatorAlgo {
         } else if (state == 1 && !l.getUP().isEmpty()) {
             double best = timeCalc(l.getUP().get(0), c);
             for (int i = 1; i < l.getUP().size(); i++) {
-                if (timeCalc(l.getUP().get(i), c) < best) {
+                if (timeCalc(l.getUP().get(i), c) < best && curr.getElevetor(l.getDOWN().get(i)).getPos() > c.getSrc()) {
                     best = timeCalc(l.getUP().get(i), c);
                     best_ele = i;
                 }
@@ -159,8 +163,8 @@ public class algo implements ElevatorAlgo {
         }
         double total_src_speed = (src_range / curr.getSpeed());
         double total_des_speed = (des_range / curr.getSpeed());
-        double total_src = total_src_speed + (num_to_src * floor_time);
-        double total_des = total_des_speed + (num_to_des * floor_time);
+        double total_src = total_src_speed + ((num_to_src - 1) * floor_time);
+        double total_des = total_des_speed + ((num_to_des - 1) * floor_time);
 
         return (total_src + total_des);
 
@@ -184,22 +188,32 @@ public class algo implements ElevatorAlgo {
             Elevator curr = this.building.getElevetor(elev);
             int pos = curr.getPos();
             if (curr.getState() == Elevator.LEVEL) {
-                if (!E_List.get(elev).queue.isEmpty()) {
+                if (E_List.get(elev).queue.size() > 1) {
+//                    int first_F = E_List.get(elev).queue.getFirst();
+
+//                    if (E_List.get(elev).queue.size() == 1) {
+//                        curr.goTo(first_F);
+//                        E_List.get(elev).removeTheFirst();
+                    System.out.println(E_List.get(elev).queue);
+                    System.out.println("SIZE " + E_List.get(elev).queue.size());
+                    E_List.get(elev).removeTheFirst();
+                    System.out.println("SIZE " + E_List.get(elev).queue.size());
                     int first_F = E_List.get(elev).queue.getFirst();
                     int last_F = E_List.get(elev).queue.getLast();
-                    if (E_List.get(elev).queue.size() == 1) {
-                        curr.goTo(first_F);
-                    } else {
-                        E_List.get(elev).queue.removeFirst();
-                        curr.goTo(last_F);
-                        curr.stop(first_F);
-                    }
+                    System.out.println("pos " + curr.getPos() + " first " + first_F + " last " + last_F);
+                    System.out.println("new first " + first_F);
+                    System.out.println(E_List.get(elev).queue);
+                    curr.goTo(last_F);
+                    curr.stop(first_F);
                 }
-            } else {
+                else if (E_List.get(elev).queue.size() == 1){
+                    curr.goTo(E_List.get(elev).queue.getFirst());
+                    E_List.get(elev).removeTheFirst();
+                }
+            } else if (E_List.get(elev).queue.isEmpty()) {
                 System.out.println("on swap");
                 E_States.swap(elev, ListOfStates.findState(elev), "LEVEL");
             }
-
         } else {
             _firstTime = false;
             int min = this.building.minFloor(), max = this.building.maxFloor();
@@ -209,10 +223,11 @@ public class algo implements ElevatorAlgo {
                 String state = dir(curr.getPos() - floor);
                 E_States.add(i, state);
                 curr.goTo(floor);
-                System.out.println("Down: "+E_States.getDOWN().size()+" UP: "+E_States.getUP().size()+" LEVEL: "+ E_States.getLEVEL().size());
+                System.out.println("Down: " + E_States.getDOWN().size() + " UP: " + E_States.getUP().size() + " LEVEL: " + E_States.getLEVEL().size());
             }
         }
     }
+
 
     public static String dir(int range) {
         if (range > 0) {
