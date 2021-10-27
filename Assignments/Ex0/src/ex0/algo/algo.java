@@ -13,18 +13,19 @@ public class algo implements ElevatorAlgo {
     public Building building;
     //public int direction;
     int allo;
-    ArrayList<FloorQueue> E_List;
+    private ArrayList<FloorQueue> E_List;
     private boolean[] _firstTime;
+    private ListOfStates E_States;
 
 
     public algo(Building b) {
         this.building = b;
         E_List = new ArrayList<>();
+        E_States = new ListOfStates();
         // this.direction = UP;
         allo = 0;
         _firstTime = new boolean[building.numberOfElevetors()];
         Arrays.fill(_firstTime, true);
-
         for (int i = 0; i < b.numberOfElevetors(); i++) {
             FloorQueue e = new FloorQueue(this.building.getElevetor(i));
             E_List.add(e);
@@ -44,6 +45,7 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
+        
 
 
        /* System.out.println("get time :" + c.getTime(c.getState()));
@@ -162,9 +164,21 @@ public class algo implements ElevatorAlgo {
             for (int i = 0; i < this.building.numberOfElevetors(); i++) {
                 Elevator curr = this.getBuilding().getElevetor(elev);
                 int floor = rand(min, max);
+                String state = dir(curr.getPos()- floor);
+                E_States.add(elev,state);
                 curr.goTo(floor);
             }
         }
+    }
+
+    public static String dir(int range) {
+        if (range > 0) {
+            return "DOWN";
+        }
+        else if (range < 0) {
+            return "UP";
+        }
+        return "LEVEL";
     }
 
     public static int rand(int min, int max) {
