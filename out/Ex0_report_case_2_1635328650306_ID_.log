@@ -1,0 +1,2025 @@
+**** The Simulator log: stage 2
+0.0,OOP_Ex0_Elevator_Simulator
+0.0,Simulated Building, ex0.simulator.Builging_A [-2,10]
+0) ex0.simulator.Elevator_A, Elev_0, speed: 1.0, open/close: 2.0,  start/stop: 3.0
+1) ex0.simulator.Elevator_A, Elev_1, speed: 1.0, open/close: 2.0,  start/stop: 3.0
+0.0,Simulated Period starTime,0.0,  endTime,1000.0,  dt,1.0
+0.0,Simulated  calls,Elevetor log, size: 100
+0.0,**** Simulation starts!! ****
+0.0, elevID,0,  pos,-2,  cmd, goto,6
+0.0, elevID,1,  pos,-2,  cmd, goto,9
+5.0,Elevator call,4.374727290393253,0,-1,1,0, got allocated to elevator, 0
+17.0,Elevator call,16.957882888088932,-1,0,1,1, got allocated to elevator, 1
+18.0, elevID,0,  pos,6,  cmd, goto,0
+21.0, elevID,1,  pos,9,  cmd, goto,-1
+23.0,Elevator call,22.094056301593582,0,-1,1,0, got allocated to elevator, 0
+, elevID,0,  pos,6,  WRONG cmd, stop,0,  the elevator is not moving!
+34.0,Elev,0,  arrived at src, 0, Elevator call,4.374727290393253,0,-1,2,0
+34.0,Elev,0,  arrived at src, 0, Elevator call,22.094056301593582,0,-1,2,0
+34.0, elevID,0,  pos,0,  cmd, goto,0
+35.0, elevID,0,  pos,0,  cmd, goto,0
+36.0, elevID,0,  pos,0,  cmd, goto,0
+37.0, elevID,0,  pos,0,  cmd, goto,0
+38.0, elevID,0,  pos,0,  cmd, goto,0
+39.0, elevID,0,  pos,0,  cmd, goto,0
+40.0, elevID,0,  pos,0,  cmd, goto,0
+41.0, elevID,0,  pos,0,  cmd, goto,0
+41.0,Elev,1,  arrived at src, -1, Elevator call,16.957882888088932,-1,0,2,1
+41.0, elevID,1,  pos,-1,  cmd, goto,-1
+42.0, elevID,0,  pos,0,  cmd, goto,0
+42.0, elevID,1,  pos,-1,  cmd, goto,-1
+43.0, elevID,0,  pos,0,  cmd, goto,0
+43.0, elevID,1,  pos,-1,  cmd, goto,-1
+44.0, elevID,0,  pos,0,  cmd, goto,0
+44.0, elevID,1,  pos,-1,  cmd, goto,-1
+45.0, elevID,0,  pos,0,  cmd, goto,0
+45.0, elevID,1,  pos,-1,  cmd, goto,-1
+46.0, elevID,0,  pos,0,  cmd, goto,0
+46.0, elevID,1,  pos,-1,  cmd, goto,-1
+47.0, elevID,0,  pos,0,  cmd, goto,0
+47.0, elevID,1,  pos,-1,  cmd, goto,-1
+48.0, elevID,0,  pos,0,  cmd, goto,0
+48.0, elevID,1,  pos,-1,  cmd, goto,-1
+49.0, elevID,0,  pos,0,  cmd, goto,0
+49.0, elevID,1,  pos,-1,  cmd, goto,-1
+50.0, elevID,0,  pos,0,  cmd, goto,0
+50.0, elevID,1,  pos,-1,  cmd, goto,-1
+51.0, elevID,0,  pos,0,  cmd, goto,0
+51.0, elevID,1,  pos,-1,  cmd, goto,-1
+52.0, elevID,0,  pos,0,  cmd, goto,0
+52.0, elevID,1,  pos,-1,  cmd, goto,-1
+53.0, elevID,0,  pos,0,  cmd, goto,0
+53.0, elevID,1,  pos,-1,  cmd, goto,-1
+54.0, elevID,0,  pos,0,  cmd, goto,0
+54.0, elevID,1,  pos,-1,  cmd, goto,-1
+55.0, elevID,0,  pos,0,  cmd, goto,0
+55.0, elevID,1,  pos,-1,  cmd, goto,-1
+56.0, elevID,0,  pos,0,  cmd, goto,0
+56.0, elevID,1,  pos,-1,  cmd, goto,-1
+57.0, elevID,0,  pos,0,  cmd, goto,0
+57.0, elevID,1,  pos,-1,  cmd, goto,-1
+58.0, elevID,0,  pos,0,  cmd, goto,0
+58.0, elevID,1,  pos,-1,  cmd, goto,-1
+59.0, elevID,0,  pos,0,  cmd, goto,0
+59.0, elevID,1,  pos,-1,  cmd, goto,-1
+60.0, elevID,0,  pos,0,  cmd, goto,0
+60.0, elevID,1,  pos,-1,  cmd, goto,-1
+61.0, elevID,0,  pos,0,  cmd, goto,0
+61.0, elevID,1,  pos,-1,  cmd, goto,-1
+62.0, elevID,0,  pos,0,  cmd, goto,0
+62.0, elevID,1,  pos,-1,  cmd, goto,-1
+63.0, elevID,0,  pos,0,  cmd, goto,0
+63.0, elevID,1,  pos,-1,  cmd, goto,-1
+64.0, elevID,0,  pos,0,  cmd, goto,0
+64.0, elevID,1,  pos,-1,  cmd, goto,-1
+65.0, elevID,0,  pos,0,  cmd, goto,0
+65.0, elevID,1,  pos,-1,  cmd, goto,-1
+66.0, elevID,0,  pos,0,  cmd, goto,0
+66.0, elevID,1,  pos,-1,  cmd, goto,-1
+67.0, elevID,0,  pos,0,  cmd, goto,0
+67.0, elevID,1,  pos,-1,  cmd, goto,-1
+68.0, elevID,0,  pos,0,  cmd, goto,0
+68.0, elevID,1,  pos,-1,  cmd, goto,-1
+69.0, elevID,0,  pos,0,  cmd, goto,0
+69.0, elevID,1,  pos,-1,  cmd, goto,-1
+70.0, elevID,0,  pos,0,  cmd, goto,0
+70.0, elevID,1,  pos,-1,  cmd, goto,-1
+71.0, elevID,0,  pos,0,  cmd, goto,0
+71.0, elevID,1,  pos,-1,  cmd, goto,-1
+72.0, elevID,0,  pos,0,  cmd, goto,0
+72.0, elevID,1,  pos,-1,  cmd, goto,-1
+73.0, elevID,0,  pos,0,  cmd, goto,0
+73.0, elevID,1,  pos,-1,  cmd, goto,-1
+74.0, elevID,0,  pos,0,  cmd, goto,0
+74.0, elevID,1,  pos,-1,  cmd, goto,-1
+75.0, elevID,0,  pos,0,  cmd, goto,0
+75.0, elevID,1,  pos,-1,  cmd, goto,-1
+76.0, elevID,0,  pos,0,  cmd, goto,0
+76.0, elevID,1,  pos,-1,  cmd, goto,-1
+77.0, elevID,0,  pos,0,  cmd, goto,0
+77.0, elevID,1,  pos,-1,  cmd, goto,-1
+78.0, elevID,0,  pos,0,  cmd, goto,0
+78.0, elevID,1,  pos,-1,  cmd, goto,-1
+79.0, elevID,0,  pos,0,  cmd, goto,0
+79.0, elevID,1,  pos,-1,  cmd, goto,-1
+80.0, elevID,0,  pos,0,  cmd, goto,0
+80.0, elevID,1,  pos,-1,  cmd, goto,-1
+81.0, elevID,0,  pos,0,  cmd, goto,0
+81.0, elevID,1,  pos,-1,  cmd, goto,-1
+82.0, elevID,0,  pos,0,  cmd, goto,0
+82.0, elevID,1,  pos,-1,  cmd, goto,-1
+83.0, elevID,0,  pos,0,  cmd, goto,0
+83.0, elevID,1,  pos,-1,  cmd, goto,-1
+84.0, elevID,0,  pos,0,  cmd, goto,0
+84.0, elevID,1,  pos,-1,  cmd, goto,-1
+85.0, elevID,0,  pos,0,  cmd, goto,0
+85.0, elevID,1,  pos,-1,  cmd, goto,-1
+86.0,Elevator call,85.5209666204754,3,2,1,0, got allocated to elevator, 0
+86.0, elevID,0,  pos,0,  cmd, goto,3
+86.0, elevID,0,  pos,0,  cmd, stop,0
+86.0, elevID,1,  pos,-1,  cmd, goto,-1
+87.0, elevID,1,  pos,-1,  cmd, goto,-1
+88.0, elevID,1,  pos,-1,  cmd, goto,-1
+89.0, elevID,1,  pos,-1,  cmd, goto,-1
+90.0, elevID,1,  pos,-1,  cmd, goto,-1
+91.0, elevID,1,  pos,-1,  cmd, goto,-1
+92.0,Elevator call,91.21019413453945,-1,-2,1,1, got allocated to elevator, 1
+92.0,Elev,1,  arrived at src, -1, Elevator call,91.21019413453945,-1,-2,2,1
+92.0, elevID,1,  pos,-1,  cmd, goto,-1
+, elevID,1,  pos,-1,  WRONG cmd, stop,-1,  the elevator is not moving!
+93.0, elevID,1,  pos,-1,  cmd, goto,-1
+94.0, elevID,1,  pos,-1,  cmd, goto,-1
+95.0, elevID,1,  pos,-1,  cmd, goto,-1
+96.0, elevID,0,  pos,0,  cmd, goto,3
+96.0, elevID,1,  pos,-1,  cmd, goto,-1
+97.0, elevID,1,  pos,-1,  cmd, goto,-1
+98.0, elevID,1,  pos,-1,  cmd, goto,-1
+99.0, elevID,1,  pos,-1,  cmd, goto,-1
+100.0, elevID,1,  pos,-1,  cmd, goto,-1
+101.0, elevID,1,  pos,-1,  cmd, goto,-1
+102.0, elevID,1,  pos,-1,  cmd, goto,-1
+103.0, elevID,1,  pos,-1,  cmd, goto,-1
+104.0, elevID,1,  pos,-1,  cmd, goto,-1
+105.0,Elevator call,104.13701241869234,0,4,1,1, got allocated to elevator, 1
+105.0, elevID,1,  pos,-1,  cmd, goto,0
+105.0, elevID,1,  pos,-1,  cmd, stop,-1
+109.0,Elev,0,  arrived at src, 3, Elevator call,85.5209666204754,3,2,2,0
+109.0, elevID,0,  pos,3,  cmd, goto,3
+110.0,Elevator call,109.21352909346587,-1,0,1,1, got allocated to elevator, 1
+110.0, elevID,0,  pos,3,  cmd, goto,3
+, elevID,1,  pos,-1,  WRONG cmd, stop,-1,  the elevator is not moving!
+111.0, elevID,0,  pos,3,  cmd, goto,3
+112.0, elevID,0,  pos,3,  cmd, goto,3
+113.0, elevID,0,  pos,3,  cmd, goto,3
+114.0, elevID,0,  pos,3,  cmd, goto,3
+115.0,Elevator call,114.39235096774041,3,0,1,0, got allocated to elevator, 0
+115.0,Elev,0,  arrived at src, 3, Elevator call,114.39235096774041,3,0,2,0
+115.0, elevID,0,  pos,3,  cmd, goto,3
+, elevID,0,  pos,3,  WRONG cmd, stop,3,  the elevator is not moving!
+115.0,Elev,1,  arrived at src, -1, Elevator call,109.21352909346587,-1,0,2,1
+115.0, elevID,1,  pos,-1,  cmd, goto,0
+116.0, elevID,0,  pos,3,  cmd, goto,3
+117.0, elevID,0,  pos,3,  cmd, goto,3
+118.0, elevID,0,  pos,3,  cmd, goto,3
+119.0, elevID,0,  pos,3,  cmd, goto,3
+120.0, elevID,0,  pos,3,  cmd, goto,3
+121.0, elevID,0,  pos,3,  cmd, goto,3
+122.0, elevID,0,  pos,3,  cmd, goto,3
+123.0, elevID,0,  pos,3,  cmd, goto,3
+124.0, elevID,0,  pos,3,  cmd, goto,3
+125.0,Elevator call,124.42557095980362,0,9,1,1, got allocated to elevator, 1
+125.0, elevID,0,  pos,3,  cmd, goto,3
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+126.0, elevID,0,  pos,3,  cmd, goto,3
+126.0,Elev,1,  arrived at dest, 0, this call is done!, Elevator call,16.957882888088932,-1,0,3,1, Done, dt, 109.04211711191107
+126.0,Elev,1,  arrived at src, 0, Elevator call,104.13701241869234,0,4,2,1
+126.0,Elev,1,  arrived at dest, 0, this call is done!, Elevator call,109.21352909346587,-1,0,3,1, Done, dt, 16.786470906534134
+126.0,Elev,1,  arrived at src, 0, Elevator call,124.42557095980362,0,9,2,1
+126.0, elevID,1,  pos,0,  cmd, goto,0
+127.0, elevID,0,  pos,3,  cmd, goto,3
+127.0, elevID,1,  pos,0,  cmd, goto,0
+128.0, elevID,0,  pos,3,  cmd, goto,3
+128.0, elevID,1,  pos,0,  cmd, goto,0
+129.0, elevID,0,  pos,3,  cmd, goto,3
+129.0, elevID,1,  pos,0,  cmd, goto,0
+130.0, elevID,0,  pos,3,  cmd, goto,3
+130.0, elevID,1,  pos,0,  cmd, goto,0
+131.0,Elevator call,130.02495678190564,8,10,1,0, got allocated to elevator, 0
+131.0,Elevator call,130.224911275492,-1,1,1,1, got allocated to elevator, 1
+131.0, elevID,0,  pos,3,  cmd, goto,8
+131.0, elevID,0,  pos,3,  cmd, stop,3
+131.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+132.0, elevID,1,  pos,0,  cmd, goto,0
+133.0, elevID,1,  pos,0,  cmd, goto,0
+134.0, elevID,1,  pos,0,  cmd, goto,0
+135.0, elevID,1,  pos,0,  cmd, goto,0
+136.0, elevID,1,  pos,0,  cmd, goto,0
+137.0, elevID,1,  pos,0,  cmd, goto,0
+138.0,Elevator call,137.9515274326701,0,4,1,1, got allocated to elevator, 1
+138.0,Elev,1,  arrived at src, 0, Elevator call,137.9515274326701,0,4,2,1
+138.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+139.0, elevID,1,  pos,0,  cmd, goto,0
+140.0, elevID,1,  pos,0,  cmd, goto,0
+141.0, elevID,0,  pos,3,  cmd, goto,8
+141.0, elevID,1,  pos,0,  cmd, goto,0
+142.0, elevID,1,  pos,0,  cmd, goto,0
+143.0, elevID,1,  pos,0,  cmd, goto,0
+144.0,Elevator call,143.91335838799415,0,6,1,1, got allocated to elevator, 1
+144.0,Elev,1,  arrived at src, 0, Elevator call,143.91335838799415,0,6,2,1
+144.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+145.0, elevID,1,  pos,0,  cmd, goto,0
+146.0, elevID,1,  pos,0,  cmd, goto,0
+147.0, elevID,1,  pos,0,  cmd, goto,0
+148.0, elevID,1,  pos,0,  cmd, goto,0
+149.0, elevID,1,  pos,0,  cmd, goto,0
+150.0, elevID,1,  pos,0,  cmd, goto,0
+151.0, elevID,1,  pos,0,  cmd, goto,0
+152.0, elevID,1,  pos,0,  cmd, goto,0
+153.0, elevID,1,  pos,0,  cmd, goto,0
+154.0, elevID,1,  pos,0,  cmd, goto,0
+155.0, elevID,1,  pos,0,  cmd, goto,0
+156.0,Elev,0,  arrived at src, 8, Elevator call,130.02495678190564,8,10,2,0
+156.0, elevID,0,  pos,8,  cmd, goto,8
+156.0, elevID,1,  pos,0,  cmd, goto,0
+157.0, elevID,0,  pos,8,  cmd, goto,8
+157.0, elevID,1,  pos,0,  cmd, goto,0
+158.0, elevID,0,  pos,8,  cmd, goto,8
+158.0, elevID,1,  pos,0,  cmd, goto,0
+159.0, elevID,0,  pos,8,  cmd, goto,8
+159.0, elevID,1,  pos,0,  cmd, goto,0
+160.0, elevID,0,  pos,8,  cmd, goto,8
+160.0, elevID,1,  pos,0,  cmd, goto,0
+161.0, elevID,0,  pos,8,  cmd, goto,8
+161.0, elevID,1,  pos,0,  cmd, goto,0
+162.0, elevID,0,  pos,8,  cmd, goto,8
+162.0, elevID,1,  pos,0,  cmd, goto,0
+163.0, elevID,0,  pos,8,  cmd, goto,8
+163.0, elevID,1,  pos,0,  cmd, goto,0
+164.0, elevID,0,  pos,8,  cmd, goto,8
+164.0, elevID,1,  pos,0,  cmd, goto,0
+165.0, elevID,0,  pos,8,  cmd, goto,8
+165.0, elevID,1,  pos,0,  cmd, goto,0
+166.0, elevID,0,  pos,8,  cmd, goto,8
+166.0, elevID,1,  pos,0,  cmd, goto,0
+167.0, elevID,0,  pos,8,  cmd, goto,8
+167.0, elevID,1,  pos,0,  cmd, goto,0
+168.0, elevID,0,  pos,8,  cmd, goto,8
+168.0, elevID,1,  pos,0,  cmd, goto,0
+169.0, elevID,0,  pos,8,  cmd, goto,8
+169.0, elevID,1,  pos,0,  cmd, goto,0
+170.0,Elevator call,169.78458339380109,-1,0,1,1, got allocated to elevator, 1
+170.0, elevID,0,  pos,8,  cmd, goto,8
+170.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+171.0,Elevator call,170.0099620835246,0,6,1,1, got allocated to elevator, 1
+171.0, elevID,0,  pos,8,  cmd, goto,8
+171.0,Elev,1,  arrived at src, 0, Elevator call,170.0099620835246,0,6,2,1
+171.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+172.0,Elevator call,171.21173315221364,-1,8,1,1, got allocated to elevator, 1
+172.0, elevID,0,  pos,8,  cmd, goto,8
+172.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+173.0, elevID,0,  pos,8,  cmd, goto,8
+173.0, elevID,1,  pos,0,  cmd, goto,0
+174.0, elevID,0,  pos,8,  cmd, goto,8
+174.0, elevID,1,  pos,0,  cmd, goto,0
+175.0,Elevator call,174.84385152106802,0,-1,1,1, got allocated to elevator, 1
+175.0, elevID,0,  pos,8,  cmd, goto,8
+175.0,Elev,1,  arrived at src, 0, Elevator call,174.84385152106802,0,-1,2,1
+175.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+176.0, elevID,0,  pos,8,  cmd, goto,8
+176.0, elevID,1,  pos,0,  cmd, goto,0
+177.0, elevID,0,  pos,8,  cmd, goto,8
+177.0, elevID,1,  pos,0,  cmd, goto,0
+178.0, elevID,0,  pos,8,  cmd, goto,8
+178.0, elevID,1,  pos,0,  cmd, goto,0
+179.0, elevID,0,  pos,8,  cmd, goto,8
+179.0, elevID,1,  pos,0,  cmd, goto,0
+180.0, elevID,0,  pos,8,  cmd, goto,8
+180.0, elevID,1,  pos,0,  cmd, goto,0
+181.0, elevID,0,  pos,8,  cmd, goto,8
+181.0, elevID,1,  pos,0,  cmd, goto,0
+182.0, elevID,0,  pos,8,  cmd, goto,8
+182.0, elevID,1,  pos,0,  cmd, goto,0
+183.0, elevID,0,  pos,8,  cmd, goto,8
+183.0, elevID,1,  pos,0,  cmd, goto,0
+184.0, elevID,0,  pos,8,  cmd, goto,8
+184.0, elevID,1,  pos,0,  cmd, goto,0
+185.0, elevID,0,  pos,8,  cmd, goto,8
+185.0, elevID,1,  pos,0,  cmd, goto,0
+186.0, elevID,0,  pos,8,  cmd, goto,8
+186.0, elevID,1,  pos,0,  cmd, goto,0
+187.0, elevID,0,  pos,8,  cmd, goto,8
+187.0, elevID,1,  pos,0,  cmd, goto,0
+188.0,Elevator call,187.11678617348463,-1,-2,1,1, got allocated to elevator, 1
+188.0,Elevator call,187.7299317966884,-1,-2,1,1, got allocated to elevator, 1
+188.0, elevID,0,  pos,8,  cmd, goto,8
+188.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+189.0, elevID,0,  pos,8,  cmd, goto,8
+189.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+190.0, elevID,0,  pos,8,  cmd, goto,8
+190.0, elevID,1,  pos,0,  cmd, goto,0
+191.0, elevID,0,  pos,8,  cmd, goto,8
+191.0, elevID,1,  pos,0,  cmd, goto,0
+192.0, elevID,0,  pos,8,  cmd, goto,8
+192.0, elevID,1,  pos,0,  cmd, goto,0
+193.0, elevID,0,  pos,8,  cmd, goto,8
+193.0, elevID,1,  pos,0,  cmd, goto,0
+194.0, elevID,0,  pos,8,  cmd, goto,8
+194.0, elevID,1,  pos,0,  cmd, goto,0
+195.0, elevID,0,  pos,8,  cmd, goto,8
+195.0, elevID,1,  pos,0,  cmd, goto,0
+196.0,Elevator call,195.90869649656992,0,7,1,1, got allocated to elevator, 1
+196.0, elevID,0,  pos,8,  cmd, goto,8
+196.0,Elev,1,  arrived at src, 0, Elevator call,195.90869649656992,0,7,2,1
+196.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+197.0, elevID,0,  pos,8,  cmd, goto,8
+197.0, elevID,1,  pos,0,  cmd, goto,0
+198.0,Elevator call,197.5359191292572,-1,1,1,1, got allocated to elevator, 1
+198.0, elevID,0,  pos,8,  cmd, goto,8
+198.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+199.0, elevID,0,  pos,8,  cmd, goto,8
+199.0, elevID,1,  pos,0,  cmd, goto,0
+200.0, elevID,0,  pos,8,  cmd, goto,8
+200.0, elevID,1,  pos,0,  cmd, goto,0
+201.0, elevID,0,  pos,8,  cmd, goto,8
+201.0, elevID,1,  pos,0,  cmd, goto,0
+202.0, elevID,0,  pos,8,  cmd, goto,8
+202.0, elevID,1,  pos,0,  cmd, goto,0
+203.0, elevID,0,  pos,8,  cmd, goto,8
+203.0, elevID,1,  pos,0,  cmd, goto,0
+204.0, elevID,0,  pos,8,  cmd, goto,8
+204.0, elevID,1,  pos,0,  cmd, goto,0
+205.0, elevID,0,  pos,8,  cmd, goto,8
+205.0, elevID,1,  pos,0,  cmd, goto,0
+206.0,Elevator call,205.9895199338651,-1,0,1,1, got allocated to elevator, 1
+206.0, elevID,0,  pos,8,  cmd, goto,8
+206.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+207.0, elevID,0,  pos,8,  cmd, goto,8
+207.0, elevID,1,  pos,0,  cmd, goto,0
+208.0, elevID,0,  pos,8,  cmd, goto,8
+208.0, elevID,1,  pos,0,  cmd, goto,0
+209.0, elevID,0,  pos,8,  cmd, goto,8
+209.0, elevID,1,  pos,0,  cmd, goto,0
+210.0, elevID,0,  pos,8,  cmd, goto,8
+210.0, elevID,1,  pos,0,  cmd, goto,0
+211.0, elevID,0,  pos,8,  cmd, goto,8
+211.0, elevID,1,  pos,0,  cmd, goto,0
+212.0, elevID,0,  pos,8,  cmd, goto,8
+212.0, elevID,1,  pos,0,  cmd, goto,0
+213.0, elevID,0,  pos,8,  cmd, goto,8
+213.0, elevID,1,  pos,0,  cmd, goto,0
+214.0, elevID,0,  pos,8,  cmd, goto,8
+214.0, elevID,1,  pos,0,  cmd, goto,0
+215.0, elevID,0,  pos,8,  cmd, goto,8
+215.0, elevID,1,  pos,0,  cmd, goto,0
+216.0, elevID,0,  pos,8,  cmd, goto,8
+216.0, elevID,1,  pos,0,  cmd, goto,0
+217.0, elevID,0,  pos,8,  cmd, goto,8
+217.0, elevID,1,  pos,0,  cmd, goto,0
+218.0, elevID,0,  pos,8,  cmd, goto,8
+218.0, elevID,1,  pos,0,  cmd, goto,0
+219.0, elevID,0,  pos,8,  cmd, goto,8
+219.0, elevID,1,  pos,0,  cmd, goto,0
+220.0, elevID,0,  pos,8,  cmd, goto,8
+220.0, elevID,1,  pos,0,  cmd, goto,0
+221.0, elevID,0,  pos,8,  cmd, goto,8
+221.0, elevID,1,  pos,0,  cmd, goto,0
+222.0, elevID,0,  pos,8,  cmd, goto,8
+222.0, elevID,1,  pos,0,  cmd, goto,0
+223.0, elevID,0,  pos,8,  cmd, goto,8
+223.0, elevID,1,  pos,0,  cmd, goto,0
+224.0, elevID,0,  pos,8,  cmd, goto,8
+224.0, elevID,1,  pos,0,  cmd, goto,0
+225.0, elevID,0,  pos,8,  cmd, goto,8
+225.0, elevID,1,  pos,0,  cmd, goto,0
+226.0, elevID,0,  pos,8,  cmd, goto,8
+226.0, elevID,1,  pos,0,  cmd, goto,0
+227.0, elevID,0,  pos,8,  cmd, goto,8
+227.0, elevID,1,  pos,0,  cmd, goto,0
+228.0,Elevator call,227.0798304557929,-1,5,1,1, got allocated to elevator, 1
+228.0, elevID,0,  pos,8,  cmd, goto,8
+228.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+229.0, elevID,0,  pos,8,  cmd, goto,8
+229.0, elevID,1,  pos,0,  cmd, goto,0
+230.0, elevID,0,  pos,8,  cmd, goto,8
+230.0, elevID,1,  pos,0,  cmd, goto,0
+231.0, elevID,0,  pos,8,  cmd, goto,8
+231.0, elevID,1,  pos,0,  cmd, goto,0
+232.0,Elevator call,231.51578817426258,-1,0,1,1, got allocated to elevator, 1
+232.0, elevID,0,  pos,8,  cmd, goto,8
+232.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+233.0,Elevator call,232.95043623946805,0,-1,1,1, got allocated to elevator, 1
+233.0, elevID,0,  pos,8,  cmd, goto,8
+233.0,Elev,1,  arrived at src, 0, Elevator call,232.95043623946805,0,-1,2,1
+233.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+234.0, elevID,0,  pos,8,  cmd, goto,8
+234.0, elevID,1,  pos,0,  cmd, goto,0
+235.0, elevID,0,  pos,8,  cmd, goto,8
+235.0, elevID,1,  pos,0,  cmd, goto,0
+236.0, elevID,0,  pos,8,  cmd, goto,8
+236.0, elevID,1,  pos,0,  cmd, goto,0
+237.0, elevID,0,  pos,8,  cmd, goto,8
+237.0, elevID,1,  pos,0,  cmd, goto,0
+238.0, elevID,0,  pos,8,  cmd, goto,8
+238.0, elevID,1,  pos,0,  cmd, goto,0
+239.0, elevID,0,  pos,8,  cmd, goto,8
+239.0, elevID,1,  pos,0,  cmd, goto,0
+240.0, elevID,0,  pos,8,  cmd, goto,8
+240.0, elevID,1,  pos,0,  cmd, goto,0
+241.0, elevID,0,  pos,8,  cmd, goto,8
+241.0, elevID,1,  pos,0,  cmd, goto,0
+242.0, elevID,0,  pos,8,  cmd, goto,8
+242.0, elevID,1,  pos,0,  cmd, goto,0
+243.0, elevID,0,  pos,8,  cmd, goto,8
+243.0, elevID,1,  pos,0,  cmd, goto,0
+244.0, elevID,0,  pos,8,  cmd, goto,8
+244.0, elevID,1,  pos,0,  cmd, goto,0
+245.0, elevID,0,  pos,8,  cmd, goto,8
+245.0, elevID,1,  pos,0,  cmd, goto,0
+246.0, elevID,0,  pos,8,  cmd, goto,8
+246.0, elevID,1,  pos,0,  cmd, goto,0
+247.0, elevID,0,  pos,8,  cmd, goto,8
+247.0, elevID,1,  pos,0,  cmd, goto,0
+248.0, elevID,0,  pos,8,  cmd, goto,8
+248.0, elevID,1,  pos,0,  cmd, goto,0
+249.0, elevID,0,  pos,8,  cmd, goto,8
+249.0, elevID,1,  pos,0,  cmd, goto,0
+250.0, elevID,0,  pos,8,  cmd, goto,8
+250.0, elevID,1,  pos,0,  cmd, goto,0
+251.0, elevID,0,  pos,8,  cmd, goto,8
+251.0, elevID,1,  pos,0,  cmd, goto,0
+252.0,Elevator call,251.10444690749756,-1,-2,1,1, got allocated to elevator, 1
+252.0,Elevator call,251.23593354161653,0,9,1,1, got allocated to elevator, 1
+252.0, elevID,0,  pos,8,  cmd, goto,8
+252.0,Elev,1,  arrived at src, 0, Elevator call,251.23593354161653,0,9,2,1
+252.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,0,  the elevator is not moving!
+253.0, elevID,0,  pos,8,  cmd, goto,8
+253.0, elevID,1,  pos,0,  cmd, goto,0
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+254.0, elevID,0,  pos,8,  cmd, goto,8
+254.0, elevID,1,  pos,0,  cmd, goto,0
+255.0,Elevator call,254.69771525200505,3,4,1,1, got allocated to elevator, 1
+255.0, elevID,0,  pos,8,  cmd, goto,8
+255.0, elevID,1,  pos,0,  cmd, goto,3
+255.0, elevID,1,  pos,0,  cmd, stop,0
+256.0, elevID,0,  pos,8,  cmd, goto,8
+257.0, elevID,0,  pos,8,  cmd, goto,8
+258.0,Elevator call,257.7974435335086,-1,0,1,1, got allocated to elevator, 1
+258.0, elevID,0,  pos,8,  cmd, goto,8
+, elevID,1,  pos,0,  WRONG cmd, stop,-1,  the elevator is not moving!
+259.0, elevID,0,  pos,8,  cmd, goto,8
+260.0, elevID,0,  pos,8,  cmd, goto,8
+261.0, elevID,0,  pos,8,  cmd, goto,8
+262.0, elevID,0,  pos,8,  cmd, goto,8
+263.0, elevID,0,  pos,8,  cmd, goto,8
+264.0, elevID,0,  pos,8,  cmd, goto,8
+265.0, elevID,0,  pos,8,  cmd, goto,8
+265.0, elevID,1,  pos,0,  cmd, goto,3
+266.0, elevID,0,  pos,8,  cmd, goto,8
+267.0, elevID,0,  pos,8,  cmd, goto,8
+268.0, elevID,0,  pos,8,  cmd, goto,8
+269.0, elevID,0,  pos,8,  cmd, goto,8
+270.0, elevID,0,  pos,8,  cmd, goto,8
+271.0, elevID,0,  pos,8,  cmd, goto,8
+272.0, elevID,0,  pos,8,  cmd, goto,8
+273.0, elevID,0,  pos,8,  cmd, goto,8
+274.0, elevID,0,  pos,8,  cmd, goto,8
+275.0, elevID,0,  pos,8,  cmd, goto,8
+276.0, elevID,0,  pos,8,  cmd, goto,8
+277.0, elevID,0,  pos,8,  cmd, goto,8
+278.0, elevID,0,  pos,8,  cmd, goto,8
+278.0,Elev,1,  arrived at src, 3, Elevator call,254.69771525200505,3,4,2,1
+278.0, elevID,1,  pos,3,  cmd, goto,3
+279.0, elevID,0,  pos,8,  cmd, goto,8
+279.0, elevID,1,  pos,3,  cmd, goto,3
+280.0, elevID,0,  pos,8,  cmd, goto,8
+280.0, elevID,1,  pos,3,  cmd, goto,3
+281.0, elevID,0,  pos,8,  cmd, goto,8
+281.0, elevID,1,  pos,3,  cmd, goto,3
+282.0, elevID,0,  pos,8,  cmd, goto,8
+282.0, elevID,1,  pos,3,  cmd, goto,3
+283.0, elevID,0,  pos,8,  cmd, goto,8
+283.0, elevID,1,  pos,3,  cmd, goto,3
+284.0, elevID,0,  pos,8,  cmd, goto,8
+284.0, elevID,1,  pos,3,  cmd, goto,3
+285.0, elevID,0,  pos,8,  cmd, goto,8
+285.0, elevID,1,  pos,3,  cmd, goto,3
+286.0, elevID,0,  pos,8,  cmd, goto,8
+286.0, elevID,1,  pos,3,  cmd, goto,3
+287.0, elevID,0,  pos,8,  cmd, goto,8
+287.0, elevID,1,  pos,3,  cmd, goto,3
+288.0, elevID,0,  pos,8,  cmd, goto,8
+288.0, elevID,1,  pos,3,  cmd, goto,3
+289.0, elevID,0,  pos,8,  cmd, goto,8
+289.0, elevID,1,  pos,3,  cmd, goto,3
+290.0, elevID,0,  pos,8,  cmd, goto,8
+290.0, elevID,1,  pos,3,  cmd, goto,3
+291.0, elevID,0,  pos,8,  cmd, goto,8
+291.0, elevID,1,  pos,3,  cmd, goto,3
+292.0, elevID,0,  pos,8,  cmd, goto,8
+292.0, elevID,1,  pos,3,  cmd, goto,3
+293.0, elevID,0,  pos,8,  cmd, goto,8
+293.0, elevID,1,  pos,3,  cmd, goto,3
+294.0, elevID,0,  pos,8,  cmd, goto,8
+294.0, elevID,1,  pos,3,  cmd, goto,3
+295.0, elevID,0,  pos,8,  cmd, goto,8
+295.0, elevID,1,  pos,3,  cmd, goto,3
+296.0,Elevator call,295.7943356681491,0,1,1,1, got allocated to elevator, 1
+296.0, elevID,0,  pos,8,  cmd, goto,8
+296.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+297.0, elevID,0,  pos,8,  cmd, goto,8
+297.0, elevID,1,  pos,3,  cmd, goto,3
+298.0, elevID,0,  pos,8,  cmd, goto,8
+298.0, elevID,1,  pos,3,  cmd, goto,3
+299.0, elevID,0,  pos,8,  cmd, goto,8
+299.0, elevID,1,  pos,3,  cmd, goto,3
+300.0, elevID,0,  pos,8,  cmd, goto,8
+300.0, elevID,1,  pos,3,  cmd, goto,3
+301.0, elevID,0,  pos,8,  cmd, goto,8
+301.0, elevID,1,  pos,3,  cmd, goto,3
+302.0, elevID,0,  pos,8,  cmd, goto,8
+302.0, elevID,1,  pos,3,  cmd, goto,3
+303.0, elevID,0,  pos,8,  cmd, goto,8
+303.0, elevID,1,  pos,3,  cmd, goto,3
+304.0, elevID,0,  pos,8,  cmd, goto,8
+304.0, elevID,1,  pos,3,  cmd, goto,3
+305.0,Elevator call,304.99843880775313,6,0,1,0, got allocated to elevator, 0
+305.0, elevID,0,  pos,8,  cmd, goto,8
+, elevID,0,  pos,8,  WRONG cmd, stop,6,  the elevator is not moving!
+305.0, elevID,1,  pos,3,  cmd, goto,3
+306.0, elevID,0,  pos,8,  cmd, goto,8
+306.0, elevID,1,  pos,3,  cmd, goto,3
+307.0, elevID,0,  pos,8,  cmd, goto,8
+307.0, elevID,1,  pos,3,  cmd, goto,3
+308.0, elevID,0,  pos,8,  cmd, goto,8
+308.0, elevID,1,  pos,3,  cmd, goto,3
+309.0, elevID,0,  pos,8,  cmd, goto,8
+309.0, elevID,1,  pos,3,  cmd, goto,3
+310.0,Elevator call,309.30053828560517,0,-1,1,1, got allocated to elevator, 1
+310.0, elevID,0,  pos,8,  cmd, goto,8
+310.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+311.0, elevID,0,  pos,8,  cmd, goto,8
+311.0, elevID,1,  pos,3,  cmd, goto,3
+312.0, elevID,0,  pos,8,  cmd, goto,8
+312.0, elevID,1,  pos,3,  cmd, goto,3
+313.0,Elevator call,312.30185564398687,0,-1,1,1, got allocated to elevator, 1
+313.0, elevID,0,  pos,8,  cmd, goto,8
+313.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+314.0, elevID,0,  pos,8,  cmd, goto,8
+314.0, elevID,1,  pos,3,  cmd, goto,3
+315.0, elevID,0,  pos,8,  cmd, goto,8
+315.0, elevID,1,  pos,3,  cmd, goto,3
+316.0, elevID,0,  pos,8,  cmd, goto,8
+316.0, elevID,1,  pos,3,  cmd, goto,3
+317.0,Elevator call,316.03237827404377,0,-1,1,1, got allocated to elevator, 1
+317.0, elevID,0,  pos,8,  cmd, goto,8
+317.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+318.0, elevID,0,  pos,8,  cmd, goto,8
+318.0, elevID,1,  pos,3,  cmd, goto,3
+319.0, elevID,0,  pos,8,  cmd, goto,8
+319.0, elevID,1,  pos,3,  cmd, goto,3
+320.0,Elevator call,319.90520204415634,6,5,1,0, got allocated to elevator, 0
+320.0, elevID,0,  pos,8,  cmd, goto,8
+, elevID,0,  pos,8,  WRONG cmd, stop,6,  the elevator is not moving!
+320.0, elevID,1,  pos,3,  cmd, goto,3
+321.0,Elevator call,320.97607492210807,-1,0,1,1, got allocated to elevator, 1
+321.0, elevID,0,  pos,8,  cmd, goto,8
+321.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,-1,  the elevator is not moving!
+322.0,Elevator call,321.37040904796595,7,-1,1,0, got allocated to elevator, 0
+322.0, elevID,0,  pos,8,  cmd, goto,8
+, elevID,0,  pos,8,  WRONG cmd, stop,7,  the elevator is not moving!
+322.0, elevID,1,  pos,3,  cmd, goto,3
+323.0, elevID,0,  pos,8,  cmd, goto,8
+323.0, elevID,1,  pos,3,  cmd, goto,3
+324.0, elevID,0,  pos,8,  cmd, goto,8
+324.0, elevID,1,  pos,3,  cmd, goto,3
+325.0, elevID,0,  pos,8,  cmd, goto,8
+325.0, elevID,1,  pos,3,  cmd, goto,3
+326.0, elevID,0,  pos,8,  cmd, goto,8
+326.0, elevID,1,  pos,3,  cmd, goto,3
+327.0, elevID,0,  pos,8,  cmd, goto,8
+327.0, elevID,1,  pos,3,  cmd, goto,3
+328.0, elevID,0,  pos,8,  cmd, goto,8
+328.0, elevID,1,  pos,3,  cmd, goto,3
+329.0, elevID,0,  pos,8,  cmd, goto,8
+329.0, elevID,1,  pos,3,  cmd, goto,3
+330.0, elevID,0,  pos,8,  cmd, goto,8
+330.0, elevID,1,  pos,3,  cmd, goto,3
+331.0, elevID,0,  pos,8,  cmd, goto,8
+331.0, elevID,1,  pos,3,  cmd, goto,3
+332.0, elevID,0,  pos,8,  cmd, goto,8
+332.0, elevID,1,  pos,3,  cmd, goto,3
+333.0,Elevator call,332.4267319393355,0,10,1,1, got allocated to elevator, 1
+333.0, elevID,0,  pos,8,  cmd, goto,8
+333.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+334.0, elevID,0,  pos,8,  cmd, goto,8
+334.0, elevID,1,  pos,3,  cmd, goto,3
+335.0, elevID,0,  pos,8,  cmd, goto,8
+335.0, elevID,1,  pos,3,  cmd, goto,3
+336.0, elevID,0,  pos,8,  cmd, goto,8
+336.0, elevID,1,  pos,3,  cmd, goto,3
+337.0,Elevator call,336.93043046159545,-1,0,1,1, got allocated to elevator, 1
+337.0, elevID,0,  pos,8,  cmd, goto,8
+337.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,-1,  the elevator is not moving!
+338.0, elevID,0,  pos,8,  cmd, goto,8
+338.0, elevID,1,  pos,3,  cmd, goto,3
+339.0, elevID,0,  pos,8,  cmd, goto,8
+339.0, elevID,1,  pos,3,  cmd, goto,3
+340.0, elevID,0,  pos,8,  cmd, goto,8
+340.0, elevID,1,  pos,3,  cmd, goto,3
+341.0, elevID,0,  pos,8,  cmd, goto,8
+341.0, elevID,1,  pos,3,  cmd, goto,3
+342.0, elevID,0,  pos,8,  cmd, goto,8
+342.0, elevID,1,  pos,3,  cmd, goto,3
+343.0, elevID,0,  pos,8,  cmd, goto,8
+343.0, elevID,1,  pos,3,  cmd, goto,3
+344.0, elevID,0,  pos,8,  cmd, goto,8
+344.0, elevID,1,  pos,3,  cmd, goto,3
+345.0, elevID,0,  pos,8,  cmd, goto,8
+345.0, elevID,1,  pos,3,  cmd, goto,3
+346.0, elevID,0,  pos,8,  cmd, goto,8
+346.0, elevID,1,  pos,3,  cmd, goto,3
+347.0, elevID,0,  pos,8,  cmd, goto,8
+347.0, elevID,1,  pos,3,  cmd, goto,3
+348.0, elevID,0,  pos,8,  cmd, goto,8
+348.0, elevID,1,  pos,3,  cmd, goto,3
+349.0, elevID,0,  pos,8,  cmd, goto,8
+349.0, elevID,1,  pos,3,  cmd, goto,3
+350.0, elevID,0,  pos,8,  cmd, goto,8
+350.0, elevID,1,  pos,3,  cmd, goto,3
+351.0, elevID,0,  pos,8,  cmd, goto,8
+351.0, elevID,1,  pos,3,  cmd, goto,3
+352.0, elevID,0,  pos,8,  cmd, goto,8
+352.0, elevID,1,  pos,3,  cmd, goto,3
+353.0, elevID,0,  pos,8,  cmd, goto,8
+353.0, elevID,1,  pos,3,  cmd, goto,3
+354.0, elevID,0,  pos,8,  cmd, goto,8
+354.0, elevID,1,  pos,3,  cmd, goto,3
+355.0, elevID,0,  pos,8,  cmd, goto,8
+355.0, elevID,1,  pos,3,  cmd, goto,3
+356.0, elevID,0,  pos,8,  cmd, goto,8
+356.0, elevID,1,  pos,3,  cmd, goto,3
+357.0, elevID,0,  pos,8,  cmd, goto,8
+357.0, elevID,1,  pos,3,  cmd, goto,3
+358.0, elevID,0,  pos,8,  cmd, goto,8
+358.0, elevID,1,  pos,3,  cmd, goto,3
+359.0, elevID,0,  pos,8,  cmd, goto,8
+359.0, elevID,1,  pos,3,  cmd, goto,3
+360.0, elevID,0,  pos,8,  cmd, goto,8
+360.0, elevID,1,  pos,3,  cmd, goto,3
+361.0, elevID,0,  pos,8,  cmd, goto,8
+361.0, elevID,1,  pos,3,  cmd, goto,3
+362.0, elevID,0,  pos,8,  cmd, goto,8
+362.0, elevID,1,  pos,3,  cmd, goto,3
+363.0, elevID,0,  pos,8,  cmd, goto,8
+363.0, elevID,1,  pos,3,  cmd, goto,3
+364.0, elevID,0,  pos,8,  cmd, goto,8
+364.0, elevID,1,  pos,3,  cmd, goto,3
+365.0, elevID,0,  pos,8,  cmd, goto,8
+365.0, elevID,1,  pos,3,  cmd, goto,3
+366.0, elevID,0,  pos,8,  cmd, goto,8
+366.0, elevID,1,  pos,3,  cmd, goto,3
+367.0, elevID,0,  pos,8,  cmd, goto,8
+367.0, elevID,1,  pos,3,  cmd, goto,3
+368.0, elevID,0,  pos,8,  cmd, goto,8
+368.0, elevID,1,  pos,3,  cmd, goto,3
+369.0, elevID,0,  pos,8,  cmd, goto,8
+369.0, elevID,1,  pos,3,  cmd, goto,3
+370.0, elevID,0,  pos,8,  cmd, goto,8
+370.0, elevID,1,  pos,3,  cmd, goto,3
+371.0, elevID,0,  pos,8,  cmd, goto,8
+371.0, elevID,1,  pos,3,  cmd, goto,3
+372.0, elevID,0,  pos,8,  cmd, goto,8
+372.0, elevID,1,  pos,3,  cmd, goto,3
+373.0, elevID,0,  pos,8,  cmd, goto,8
+373.0, elevID,1,  pos,3,  cmd, goto,3
+374.0, elevID,0,  pos,8,  cmd, goto,8
+374.0, elevID,1,  pos,3,  cmd, goto,3
+375.0, elevID,0,  pos,8,  cmd, goto,8
+375.0, elevID,1,  pos,3,  cmd, goto,3
+376.0,Elevator call,375.49048095381363,1,0,1,1, got allocated to elevator, 1
+376.0, elevID,0,  pos,8,  cmd, goto,8
+376.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,1,  the elevator is not moving!
+377.0, elevID,0,  pos,8,  cmd, goto,8
+377.0, elevID,1,  pos,3,  cmd, goto,3
+378.0, elevID,0,  pos,8,  cmd, goto,8
+378.0, elevID,1,  pos,3,  cmd, goto,3
+379.0, elevID,0,  pos,8,  cmd, goto,8
+379.0, elevID,1,  pos,3,  cmd, goto,3
+380.0, elevID,0,  pos,8,  cmd, goto,8
+380.0, elevID,1,  pos,3,  cmd, goto,3
+381.0, elevID,0,  pos,8,  cmd, goto,8
+381.0, elevID,1,  pos,3,  cmd, goto,3
+382.0, elevID,0,  pos,8,  cmd, goto,8
+382.0, elevID,1,  pos,3,  cmd, goto,3
+383.0, elevID,0,  pos,8,  cmd, goto,8
+383.0, elevID,1,  pos,3,  cmd, goto,3
+384.0, elevID,0,  pos,8,  cmd, goto,8
+384.0, elevID,1,  pos,3,  cmd, goto,3
+385.0, elevID,0,  pos,8,  cmd, goto,8
+385.0, elevID,1,  pos,3,  cmd, goto,3
+386.0, elevID,0,  pos,8,  cmd, goto,8
+386.0, elevID,1,  pos,3,  cmd, goto,3
+387.0, elevID,0,  pos,8,  cmd, goto,8
+387.0, elevID,1,  pos,3,  cmd, goto,3
+388.0, elevID,0,  pos,8,  cmd, goto,8
+388.0, elevID,1,  pos,3,  cmd, goto,3
+389.0, elevID,0,  pos,8,  cmd, goto,8
+389.0, elevID,1,  pos,3,  cmd, goto,3
+390.0, elevID,0,  pos,8,  cmd, goto,8
+390.0, elevID,1,  pos,3,  cmd, goto,3
+391.0, elevID,0,  pos,8,  cmd, goto,8
+391.0, elevID,1,  pos,3,  cmd, goto,3
+392.0, elevID,0,  pos,8,  cmd, goto,8
+392.0, elevID,1,  pos,3,  cmd, goto,3
+393.0,Elevator call,392.5160764870397,0,5,1,1, got allocated to elevator, 1
+393.0, elevID,0,  pos,8,  cmd, goto,8
+393.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+394.0, elevID,0,  pos,8,  cmd, goto,8
+394.0, elevID,1,  pos,3,  cmd, goto,3
+395.0, elevID,0,  pos,8,  cmd, goto,8
+395.0, elevID,1,  pos,3,  cmd, goto,3
+396.0, elevID,0,  pos,8,  cmd, goto,8
+396.0, elevID,1,  pos,3,  cmd, goto,3
+397.0, elevID,0,  pos,8,  cmd, goto,8
+397.0, elevID,1,  pos,3,  cmd, goto,3
+398.0, elevID,0,  pos,8,  cmd, goto,8
+398.0, elevID,1,  pos,3,  cmd, goto,3
+399.0, elevID,0,  pos,8,  cmd, goto,8
+399.0, elevID,1,  pos,3,  cmd, goto,3
+400.0, elevID,0,  pos,8,  cmd, goto,8
+400.0, elevID,1,  pos,3,  cmd, goto,3
+401.0, elevID,0,  pos,8,  cmd, goto,8
+401.0, elevID,1,  pos,3,  cmd, goto,3
+402.0, elevID,0,  pos,8,  cmd, goto,8
+402.0, elevID,1,  pos,3,  cmd, goto,3
+403.0, elevID,0,  pos,8,  cmd, goto,8
+403.0, elevID,1,  pos,3,  cmd, goto,3
+404.0, elevID,0,  pos,8,  cmd, goto,8
+404.0, elevID,1,  pos,3,  cmd, goto,3
+405.0, elevID,0,  pos,8,  cmd, goto,8
+405.0, elevID,1,  pos,3,  cmd, goto,3
+406.0,Elevator call,405.1821140884023,-1,10,1,1, got allocated to elevator, 1
+406.0, elevID,0,  pos,8,  cmd, goto,8
+406.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,-1,  the elevator is not moving!
+407.0, elevID,0,  pos,8,  cmd, goto,8
+407.0, elevID,1,  pos,3,  cmd, goto,3
+408.0, elevID,0,  pos,8,  cmd, goto,8
+408.0, elevID,1,  pos,3,  cmd, goto,3
+409.0, elevID,0,  pos,8,  cmd, goto,8
+409.0, elevID,1,  pos,3,  cmd, goto,3
+410.0, elevID,0,  pos,8,  cmd, goto,8
+410.0, elevID,1,  pos,3,  cmd, goto,3
+411.0, elevID,0,  pos,8,  cmd, goto,8
+411.0, elevID,1,  pos,3,  cmd, goto,3
+412.0, elevID,0,  pos,8,  cmd, goto,8
+412.0, elevID,1,  pos,3,  cmd, goto,3
+413.0, elevID,0,  pos,8,  cmd, goto,8
+413.0, elevID,1,  pos,3,  cmd, goto,3
+414.0, elevID,0,  pos,8,  cmd, goto,8
+414.0, elevID,1,  pos,3,  cmd, goto,3
+415.0, elevID,0,  pos,8,  cmd, goto,8
+415.0, elevID,1,  pos,3,  cmd, goto,3
+416.0, elevID,0,  pos,8,  cmd, goto,8
+416.0, elevID,1,  pos,3,  cmd, goto,3
+417.0, elevID,0,  pos,8,  cmd, goto,8
+417.0, elevID,1,  pos,3,  cmd, goto,3
+418.0, elevID,0,  pos,8,  cmd, goto,8
+418.0, elevID,1,  pos,3,  cmd, goto,3
+419.0, elevID,0,  pos,8,  cmd, goto,8
+419.0, elevID,1,  pos,3,  cmd, goto,3
+420.0, elevID,0,  pos,8,  cmd, goto,8
+420.0, elevID,1,  pos,3,  cmd, goto,3
+421.0, elevID,0,  pos,8,  cmd, goto,8
+421.0, elevID,1,  pos,3,  cmd, goto,3
+422.0, elevID,0,  pos,8,  cmd, goto,8
+422.0, elevID,1,  pos,3,  cmd, goto,3
+423.0, elevID,0,  pos,8,  cmd, goto,8
+423.0, elevID,1,  pos,3,  cmd, goto,3
+424.0, elevID,0,  pos,8,  cmd, goto,8
+424.0, elevID,1,  pos,3,  cmd, goto,3
+425.0, elevID,0,  pos,8,  cmd, goto,8
+425.0, elevID,1,  pos,3,  cmd, goto,3
+426.0, elevID,0,  pos,8,  cmd, goto,8
+426.0, elevID,1,  pos,3,  cmd, goto,3
+427.0,Elevator call,426.8615805478589,2,0,1,1, got allocated to elevator, 1
+427.0, elevID,0,  pos,8,  cmd, goto,8
+427.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,2,  the elevator is not moving!
+428.0, elevID,0,  pos,8,  cmd, goto,8
+428.0, elevID,1,  pos,3,  cmd, goto,3
+429.0, elevID,0,  pos,8,  cmd, goto,8
+429.0, elevID,1,  pos,3,  cmd, goto,3
+430.0, elevID,0,  pos,8,  cmd, goto,8
+430.0, elevID,1,  pos,3,  cmd, goto,3
+431.0, elevID,0,  pos,8,  cmd, goto,8
+431.0, elevID,1,  pos,3,  cmd, goto,3
+432.0, elevID,0,  pos,8,  cmd, goto,8
+432.0, elevID,1,  pos,3,  cmd, goto,3
+433.0, elevID,0,  pos,8,  cmd, goto,8
+433.0, elevID,1,  pos,3,  cmd, goto,3
+434.0, elevID,0,  pos,8,  cmd, goto,8
+434.0, elevID,1,  pos,3,  cmd, goto,3
+435.0, elevID,0,  pos,8,  cmd, goto,8
+435.0, elevID,1,  pos,3,  cmd, goto,3
+436.0, elevID,0,  pos,8,  cmd, goto,8
+436.0, elevID,1,  pos,3,  cmd, goto,3
+437.0, elevID,0,  pos,8,  cmd, goto,8
+437.0, elevID,1,  pos,3,  cmd, goto,3
+438.0,Elevator call,437.17111576125836,1,0,1,1, got allocated to elevator, 1
+438.0, elevID,0,  pos,8,  cmd, goto,8
+438.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,1,  the elevator is not moving!
+439.0, elevID,0,  pos,8,  cmd, goto,8
+439.0, elevID,1,  pos,3,  cmd, goto,3
+440.0, elevID,0,  pos,8,  cmd, goto,8
+440.0, elevID,1,  pos,3,  cmd, goto,3
+441.0, elevID,0,  pos,8,  cmd, goto,8
+441.0, elevID,1,  pos,3,  cmd, goto,3
+442.0, elevID,0,  pos,8,  cmd, goto,8
+442.0, elevID,1,  pos,3,  cmd, goto,3
+443.0, elevID,0,  pos,8,  cmd, goto,8
+443.0, elevID,1,  pos,3,  cmd, goto,3
+444.0, elevID,0,  pos,8,  cmd, goto,8
+444.0, elevID,1,  pos,3,  cmd, goto,3
+445.0, elevID,0,  pos,8,  cmd, goto,8
+445.0, elevID,1,  pos,3,  cmd, goto,3
+446.0, elevID,0,  pos,8,  cmd, goto,8
+446.0, elevID,1,  pos,3,  cmd, goto,3
+447.0, elevID,0,  pos,8,  cmd, goto,8
+447.0, elevID,1,  pos,3,  cmd, goto,3
+448.0, elevID,0,  pos,8,  cmd, goto,8
+448.0, elevID,1,  pos,3,  cmd, goto,3
+449.0, elevID,0,  pos,8,  cmd, goto,8
+449.0, elevID,1,  pos,3,  cmd, goto,3
+450.0, elevID,0,  pos,8,  cmd, goto,8
+450.0, elevID,1,  pos,3,  cmd, goto,3
+451.0, elevID,0,  pos,8,  cmd, goto,8
+451.0, elevID,1,  pos,3,  cmd, goto,3
+452.0, elevID,0,  pos,8,  cmd, goto,8
+452.0, elevID,1,  pos,3,  cmd, goto,3
+453.0, elevID,0,  pos,8,  cmd, goto,8
+453.0, elevID,1,  pos,3,  cmd, goto,3
+454.0, elevID,0,  pos,8,  cmd, goto,8
+454.0, elevID,1,  pos,3,  cmd, goto,3
+455.0, elevID,0,  pos,8,  cmd, goto,8
+455.0, elevID,1,  pos,3,  cmd, goto,3
+456.0, elevID,0,  pos,8,  cmd, goto,8
+456.0, elevID,1,  pos,3,  cmd, goto,3
+457.0, elevID,0,  pos,8,  cmd, goto,8
+457.0, elevID,1,  pos,3,  cmd, goto,3
+458.0, elevID,0,  pos,8,  cmd, goto,8
+458.0, elevID,1,  pos,3,  cmd, goto,3
+459.0, elevID,0,  pos,8,  cmd, goto,8
+459.0, elevID,1,  pos,3,  cmd, goto,3
+460.0, elevID,0,  pos,8,  cmd, goto,8
+460.0, elevID,1,  pos,3,  cmd, goto,3
+461.0, elevID,0,  pos,8,  cmd, goto,8
+461.0, elevID,1,  pos,3,  cmd, goto,3
+462.0, elevID,0,  pos,8,  cmd, goto,8
+462.0, elevID,1,  pos,3,  cmd, goto,3
+463.0, elevID,0,  pos,8,  cmd, goto,8
+463.0, elevID,1,  pos,3,  cmd, goto,3
+464.0, elevID,0,  pos,8,  cmd, goto,8
+464.0, elevID,1,  pos,3,  cmd, goto,3
+465.0, elevID,0,  pos,8,  cmd, goto,8
+465.0, elevID,1,  pos,3,  cmd, goto,3
+466.0, elevID,0,  pos,8,  cmd, goto,8
+466.0, elevID,1,  pos,3,  cmd, goto,3
+467.0, elevID,0,  pos,8,  cmd, goto,8
+467.0, elevID,1,  pos,3,  cmd, goto,3
+468.0, elevID,0,  pos,8,  cmd, goto,8
+468.0, elevID,1,  pos,3,  cmd, goto,3
+469.0, elevID,0,  pos,8,  cmd, goto,8
+469.0, elevID,1,  pos,3,  cmd, goto,3
+470.0, elevID,0,  pos,8,  cmd, goto,8
+470.0, elevID,1,  pos,3,  cmd, goto,3
+471.0, elevID,0,  pos,8,  cmd, goto,8
+471.0, elevID,1,  pos,3,  cmd, goto,3
+472.0, elevID,0,  pos,8,  cmd, goto,8
+472.0, elevID,1,  pos,3,  cmd, goto,3
+473.0,Elevator call,472.7445473930129,10,-1,1,0, got allocated to elevator, 0
+473.0, elevID,0,  pos,8,  cmd, goto,10
+473.0, elevID,0,  pos,8,  cmd, stop,8
+473.0, elevID,1,  pos,3,  cmd, goto,3
+474.0, elevID,1,  pos,3,  cmd, goto,3
+475.0, elevID,1,  pos,3,  cmd, goto,3
+476.0, elevID,1,  pos,3,  cmd, goto,3
+477.0, elevID,1,  pos,3,  cmd, goto,3
+478.0, elevID,1,  pos,3,  cmd, goto,3
+479.0, elevID,1,  pos,3,  cmd, goto,3
+480.0, elevID,1,  pos,3,  cmd, goto,3
+481.0, elevID,1,  pos,3,  cmd, goto,3
+482.0, elevID,1,  pos,3,  cmd, goto,3
+483.0, elevID,0,  pos,8,  cmd, goto,10
+483.0, elevID,1,  pos,3,  cmd, goto,3
+484.0, elevID,1,  pos,3,  cmd, goto,3
+485.0, elevID,1,  pos,3,  cmd, goto,3
+486.0, elevID,1,  pos,3,  cmd, goto,3
+487.0, elevID,1,  pos,3,  cmd, goto,3
+488.0, elevID,1,  pos,3,  cmd, goto,3
+489.0, elevID,1,  pos,3,  cmd, goto,3
+490.0, elevID,1,  pos,3,  cmd, goto,3
+491.0, elevID,1,  pos,3,  cmd, goto,3
+492.0, elevID,1,  pos,3,  cmd, goto,3
+493.0, elevID,1,  pos,3,  cmd, goto,3
+494.0, elevID,1,  pos,3,  cmd, goto,3
+495.0,Elev,0,  arrived at dest, 10, this call is done!, Elevator call,130.02495678190564,8,10,3,0, Done, dt, 364.97504321809436
+495.0,Elev,0,  arrived at src, 10, Elevator call,472.7445473930129,10,-1,2,0
+495.0, elevID,0,  pos,10,  cmd, goto,10
+495.0, elevID,1,  pos,3,  cmd, goto,3
+496.0, elevID,0,  pos,10,  cmd, goto,10
+496.0, elevID,1,  pos,3,  cmd, goto,3
+497.0, elevID,0,  pos,10,  cmd, goto,10
+497.0, elevID,1,  pos,3,  cmd, goto,3
+498.0, elevID,0,  pos,10,  cmd, goto,10
+498.0, elevID,1,  pos,3,  cmd, goto,3
+499.0, elevID,0,  pos,10,  cmd, goto,10
+499.0, elevID,1,  pos,3,  cmd, goto,3
+500.0, elevID,0,  pos,10,  cmd, goto,10
+500.0, elevID,1,  pos,3,  cmd, goto,3
+501.0,Elevator call,500.3712044996745,8,-1,1,0, got allocated to elevator, 0
+501.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,8,  the elevator is not moving!
+501.0, elevID,1,  pos,3,  cmd, goto,3
+502.0, elevID,0,  pos,10,  cmd, goto,10
+502.0, elevID,1,  pos,3,  cmd, goto,3
+503.0, elevID,0,  pos,10,  cmd, goto,10
+503.0, elevID,1,  pos,3,  cmd, goto,3
+504.0,Elevator call,503.13847841893045,1,-1,1,1, got allocated to elevator, 1
+504.0, elevID,0,  pos,10,  cmd, goto,10
+504.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,1,  the elevator is not moving!
+505.0,Elevator call,504.4317942159655,0,-1,1,1, got allocated to elevator, 1
+505.0, elevID,0,  pos,10,  cmd, goto,10
+505.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,0,  the elevator is not moving!
+506.0, elevID,0,  pos,10,  cmd, goto,10
+506.0, elevID,1,  pos,3,  cmd, goto,3
+507.0, elevID,0,  pos,10,  cmd, goto,10
+507.0, elevID,1,  pos,3,  cmd, goto,3
+508.0, elevID,0,  pos,10,  cmd, goto,10
+508.0, elevID,1,  pos,3,  cmd, goto,3
+509.0, elevID,0,  pos,10,  cmd, goto,10
+509.0, elevID,1,  pos,3,  cmd, goto,3
+510.0, elevID,0,  pos,10,  cmd, goto,10
+510.0, elevID,1,  pos,3,  cmd, goto,3
+511.0, elevID,0,  pos,10,  cmd, goto,10
+511.0, elevID,1,  pos,3,  cmd, goto,3
+512.0, elevID,0,  pos,10,  cmd, goto,10
+512.0, elevID,1,  pos,3,  cmd, goto,3
+513.0, elevID,0,  pos,10,  cmd, goto,10
+513.0, elevID,1,  pos,3,  cmd, goto,3
+514.0, elevID,0,  pos,10,  cmd, goto,10
+514.0, elevID,1,  pos,3,  cmd, goto,3
+515.0, elevID,0,  pos,10,  cmd, goto,10
+515.0, elevID,1,  pos,3,  cmd, goto,3
+516.0, elevID,0,  pos,10,  cmd, goto,10
+516.0, elevID,1,  pos,3,  cmd, goto,3
+517.0, elevID,0,  pos,10,  cmd, goto,10
+517.0, elevID,1,  pos,3,  cmd, goto,3
+518.0, elevID,0,  pos,10,  cmd, goto,10
+518.0, elevID,1,  pos,3,  cmd, goto,3
+519.0, elevID,0,  pos,10,  cmd, goto,10
+519.0, elevID,1,  pos,3,  cmd, goto,3
+520.0, elevID,0,  pos,10,  cmd, goto,10
+520.0, elevID,1,  pos,3,  cmd, goto,3
+521.0, elevID,0,  pos,10,  cmd, goto,10
+521.0, elevID,1,  pos,3,  cmd, goto,3
+522.0, elevID,0,  pos,10,  cmd, goto,10
+522.0, elevID,1,  pos,3,  cmd, goto,3
+523.0, elevID,0,  pos,10,  cmd, goto,10
+523.0, elevID,1,  pos,3,  cmd, goto,3
+524.0, elevID,0,  pos,10,  cmd, goto,10
+524.0, elevID,1,  pos,3,  cmd, goto,3
+525.0, elevID,0,  pos,10,  cmd, goto,10
+525.0, elevID,1,  pos,3,  cmd, goto,3
+526.0, elevID,0,  pos,10,  cmd, goto,10
+526.0, elevID,1,  pos,3,  cmd, goto,3
+527.0, elevID,0,  pos,10,  cmd, goto,10
+527.0, elevID,1,  pos,3,  cmd, goto,3
+528.0, elevID,0,  pos,10,  cmd, goto,10
+528.0, elevID,1,  pos,3,  cmd, goto,3
+529.0, elevID,0,  pos,10,  cmd, goto,10
+529.0, elevID,1,  pos,3,  cmd, goto,3
+530.0,Elevator call,529.6277472128405,3,-1,1,1, got allocated to elevator, 1
+530.0, elevID,0,  pos,10,  cmd, goto,10
+530.0,Elev,1,  arrived at src, 3, Elevator call,529.6277472128405,3,-1,2,1
+530.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,3,  the elevator is not moving!
+531.0, elevID,0,  pos,10,  cmd, goto,10
+531.0, elevID,1,  pos,3,  cmd, goto,3
+532.0, elevID,0,  pos,10,  cmd, goto,10
+532.0, elevID,1,  pos,3,  cmd, goto,3
+533.0, elevID,0,  pos,10,  cmd, goto,10
+533.0, elevID,1,  pos,3,  cmd, goto,3
+534.0, elevID,0,  pos,10,  cmd, goto,10
+534.0, elevID,1,  pos,3,  cmd, goto,3
+535.0, elevID,0,  pos,10,  cmd, goto,10
+535.0, elevID,1,  pos,3,  cmd, goto,3
+536.0, elevID,0,  pos,10,  cmd, goto,10
+536.0, elevID,1,  pos,3,  cmd, goto,3
+537.0, elevID,0,  pos,10,  cmd, goto,10
+537.0, elevID,1,  pos,3,  cmd, goto,3
+538.0,Elevator call,537.7866883694313,-1,6,1,1, got allocated to elevator, 1
+538.0, elevID,0,  pos,10,  cmd, goto,10
+538.0, elevID,1,  pos,3,  cmd, goto,3
+, elevID,1,  pos,3,  WRONG cmd, stop,-1,  the elevator is not moving!
+539.0, elevID,0,  pos,10,  cmd, goto,10
+539.0, elevID,1,  pos,3,  cmd, goto,3
+540.0, elevID,0,  pos,10,  cmd, goto,10
+540.0, elevID,1,  pos,3,  cmd, goto,3
+541.0, elevID,0,  pos,10,  cmd, goto,10
+541.0, elevID,1,  pos,3,  cmd, goto,3
+542.0, elevID,0,  pos,10,  cmd, goto,10
+542.0, elevID,1,  pos,3,  cmd, goto,3
+543.0, elevID,0,  pos,10,  cmd, goto,10
+543.0, elevID,1,  pos,3,  cmd, goto,3
+544.0, elevID,0,  pos,10,  cmd, goto,10
+544.0, elevID,1,  pos,3,  cmd, goto,3
+545.0,Elevator call,544.7880392034898,6,-1,1,1, got allocated to elevator, 1
+545.0, elevID,0,  pos,10,  cmd, goto,10
+545.0, elevID,1,  pos,3,  cmd, goto,6
+545.0, elevID,1,  pos,3,  cmd, stop,3
+546.0, elevID,0,  pos,10,  cmd, goto,10
+547.0, elevID,0,  pos,10,  cmd, goto,10
+548.0, elevID,0,  pos,10,  cmd, goto,10
+549.0, elevID,0,  pos,10,  cmd, goto,10
+550.0, elevID,0,  pos,10,  cmd, goto,10
+551.0, elevID,0,  pos,10,  cmd, goto,10
+552.0, elevID,0,  pos,10,  cmd, goto,10
+553.0, elevID,0,  pos,10,  cmd, goto,10
+554.0, elevID,0,  pos,10,  cmd, goto,10
+555.0,Elevator call,554.0892922920482,4,0,1,1, got allocated to elevator, 1
+555.0, elevID,0,  pos,10,  cmd, goto,10
+555.0, elevID,1,  pos,3,  cmd, goto,6
+555.0, elevID,1,  pos,3,  cmd, stop,4
+556.0, elevID,0,  pos,10,  cmd, goto,10
+557.0, elevID,0,  pos,10,  cmd, goto,10
+558.0,Elevator call,557.2441390036331,10,0,1,0, got allocated to elevator, 0
+558.0,Elev,0,  arrived at src, 10, Elevator call,557.2441390036331,10,0,2,0
+558.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,10,  the elevator is not moving!
+559.0, elevID,0,  pos,10,  cmd, goto,10
+560.0, elevID,0,  pos,10,  cmd, goto,10
+561.0, elevID,0,  pos,10,  cmd, goto,10
+562.0, elevID,0,  pos,10,  cmd, goto,10
+563.0, elevID,0,  pos,10,  cmd, goto,10
+564.0, elevID,0,  pos,10,  cmd, goto,10
+565.0, elevID,0,  pos,10,  cmd, goto,10
+566.0,Elevator call,565.0195521745534,0,-1,1,1, got allocated to elevator, 1
+566.0, elevID,0,  pos,10,  cmd, goto,10
+566.0,Elev,1,  arrived at dest, 4, this call is done!, Elevator call,104.13701241869234,0,4,3,1, Done, dt, 461.86298758130766
+566.0,Elev,1,  arrived at dest, 4, this call is done!, Elevator call,137.9515274326701,0,4,3,1, Done, dt, 428.0484725673299
+566.0,Elev,1,  arrived at dest, 4, this call is done!, Elevator call,254.69771525200505,3,4,3,1, Done, dt, 311.3022847479949
+566.0,Elev,1,  arrived at src, 4, Elevator call,554.0892922920482,4,0,2,1
+566.0, elevID,1,  pos,4,  cmd, goto,6
+, elevID,1,  pos,4,  WRONG cmd, stop,0,  the elevator is not moving!
+567.0, elevID,0,  pos,10,  cmd, goto,10
+568.0, elevID,0,  pos,10,  cmd, goto,10
+569.0, elevID,0,  pos,10,  cmd, goto,10
+570.0, elevID,0,  pos,10,  cmd, goto,10
+571.0, elevID,0,  pos,10,  cmd, goto,10
+572.0, elevID,0,  pos,10,  cmd, goto,10
+573.0, elevID,0,  pos,10,  cmd, goto,10
+574.0, elevID,0,  pos,10,  cmd, goto,10
+575.0, elevID,0,  pos,10,  cmd, goto,10
+576.0, elevID,0,  pos,10,  cmd, goto,10
+577.0, elevID,0,  pos,10,  cmd, goto,10
+578.0, elevID,0,  pos,10,  cmd, goto,10
+578.0,Elev,1,  arrived at dest, 6, this call is done!, Elevator call,143.91335838799415,0,6,3,1, Done, dt, 434.08664161200585
+578.0,Elev,1,  arrived at dest, 6, this call is done!, Elevator call,170.0099620835246,0,6,3,1, Done, dt, 407.9900379164754
+578.0,Elev,1,  arrived at src, 6, Elevator call,544.7880392034898,6,-1,2,1
+578.0, elevID,1,  pos,6,  cmd, goto,6
+579.0, elevID,0,  pos,10,  cmd, goto,10
+579.0, elevID,1,  pos,6,  cmd, goto,6
+580.0, elevID,0,  pos,10,  cmd, goto,10
+580.0, elevID,1,  pos,6,  cmd, goto,6
+581.0, elevID,0,  pos,10,  cmd, goto,10
+581.0, elevID,1,  pos,6,  cmd, goto,6
+582.0,Elevator call,581.8703090238192,0,3,1,1, got allocated to elevator, 1
+582.0, elevID,0,  pos,10,  cmd, goto,10
+582.0, elevID,1,  pos,6,  cmd, goto,6
+, elevID,1,  pos,6,  WRONG cmd, stop,0,  the elevator is not moving!
+583.0, elevID,0,  pos,10,  cmd, goto,10
+583.0, elevID,1,  pos,6,  cmd, goto,6
+584.0, elevID,0,  pos,10,  cmd, goto,10
+584.0, elevID,1,  pos,6,  cmd, goto,6
+585.0, elevID,0,  pos,10,  cmd, goto,10
+585.0, elevID,1,  pos,6,  cmd, goto,6
+586.0, elevID,0,  pos,10,  cmd, goto,10
+586.0, elevID,1,  pos,6,  cmd, goto,6
+587.0, elevID,0,  pos,10,  cmd, goto,10
+587.0, elevID,1,  pos,6,  cmd, goto,6
+588.0, elevID,0,  pos,10,  cmd, goto,10
+588.0, elevID,1,  pos,6,  cmd, goto,6
+589.0, elevID,0,  pos,10,  cmd, goto,10
+589.0, elevID,1,  pos,6,  cmd, goto,6
+590.0, elevID,0,  pos,10,  cmd, goto,10
+590.0, elevID,1,  pos,6,  cmd, goto,6
+591.0, elevID,0,  pos,10,  cmd, goto,10
+591.0, elevID,1,  pos,6,  cmd, goto,6
+592.0, elevID,0,  pos,10,  cmd, goto,10
+592.0, elevID,1,  pos,6,  cmd, goto,6
+593.0, elevID,0,  pos,10,  cmd, goto,10
+593.0, elevID,1,  pos,6,  cmd, goto,6
+594.0, elevID,0,  pos,10,  cmd, goto,10
+594.0, elevID,1,  pos,6,  cmd, goto,6
+595.0, elevID,0,  pos,10,  cmd, goto,10
+595.0, elevID,1,  pos,6,  cmd, goto,6
+596.0, elevID,0,  pos,10,  cmd, goto,10
+596.0, elevID,1,  pos,6,  cmd, goto,6
+597.0,Elevator call,596.1232022872633,8,0,1,0, got allocated to elevator, 0
+597.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,8,  the elevator is not moving!
+597.0, elevID,1,  pos,6,  cmd, goto,6
+598.0, elevID,0,  pos,10,  cmd, goto,10
+598.0, elevID,1,  pos,6,  cmd, goto,6
+599.0, elevID,0,  pos,10,  cmd, goto,10
+599.0, elevID,1,  pos,6,  cmd, goto,6
+600.0, elevID,0,  pos,10,  cmd, goto,10
+600.0, elevID,1,  pos,6,  cmd, goto,6
+601.0,Elevator call,600.9312879686208,1,0,1,1, got allocated to elevator, 1
+601.0, elevID,0,  pos,10,  cmd, goto,10
+601.0, elevID,1,  pos,6,  cmd, goto,6
+, elevID,1,  pos,6,  WRONG cmd, stop,1,  the elevator is not moving!
+602.0, elevID,0,  pos,10,  cmd, goto,10
+602.0, elevID,1,  pos,6,  cmd, goto,6
+603.0, elevID,0,  pos,10,  cmd, goto,10
+603.0, elevID,1,  pos,6,  cmd, goto,6
+604.0,Elevator call,603.9342326983083,7,0,1,1, got allocated to elevator, 1
+604.0, elevID,0,  pos,10,  cmd, goto,10
+604.0, elevID,1,  pos,6,  cmd, goto,7
+604.0, elevID,1,  pos,6,  cmd, stop,6
+605.0, elevID,0,  pos,10,  cmd, goto,10
+606.0, elevID,0,  pos,10,  cmd, goto,10
+607.0, elevID,0,  pos,10,  cmd, goto,10
+608.0, elevID,0,  pos,10,  cmd, goto,10
+609.0, elevID,0,  pos,10,  cmd, goto,10
+610.0, elevID,0,  pos,10,  cmd, goto,10
+611.0, elevID,0,  pos,10,  cmd, goto,10
+612.0, elevID,0,  pos,10,  cmd, goto,10
+613.0, elevID,0,  pos,10,  cmd, goto,10
+614.0, elevID,0,  pos,10,  cmd, goto,10
+614.0, elevID,1,  pos,6,  cmd, goto,7
+615.0, elevID,0,  pos,10,  cmd, goto,10
+616.0, elevID,0,  pos,10,  cmd, goto,10
+617.0, elevID,0,  pos,10,  cmd, goto,10
+618.0,Elevator call,617.9628338542149,0,3,1,1, got allocated to elevator, 1
+618.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,1,  pos,6,  WRONG cmd, stop,0,  the elevator is not moving!
+619.0, elevID,0,  pos,10,  cmd, goto,10
+620.0,Elevator call,619.6454196970012,9,0,1,0, got allocated to elevator, 0
+620.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,9,  the elevator is not moving!
+621.0, elevID,0,  pos,10,  cmd, goto,10
+622.0, elevID,0,  pos,10,  cmd, goto,10
+623.0, elevID,0,  pos,10,  cmd, goto,10
+624.0, elevID,0,  pos,10,  cmd, goto,10
+625.0, elevID,0,  pos,10,  cmd, goto,10
+625.0,Elev,1,  arrived at dest, 7, this call is done!, Elevator call,195.90869649656992,0,7,3,1, Done, dt, 429.0913035034301
+625.0,Elev,1,  arrived at src, 7, Elevator call,603.9342326983083,7,0,2,1
+625.0, elevID,1,  pos,7,  cmd, goto,7
+626.0, elevID,0,  pos,10,  cmd, goto,10
+626.0, elevID,1,  pos,7,  cmd, goto,7
+627.0,Elevator call,626.2116172047942,0,1,1,1, got allocated to elevator, 1
+627.0, elevID,0,  pos,10,  cmd, goto,10
+627.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+628.0, elevID,0,  pos,10,  cmd, goto,10
+628.0, elevID,1,  pos,7,  cmd, goto,7
+629.0, elevID,0,  pos,10,  cmd, goto,10
+629.0, elevID,1,  pos,7,  cmd, goto,7
+630.0, elevID,0,  pos,10,  cmd, goto,10
+630.0, elevID,1,  pos,7,  cmd, goto,7
+631.0, elevID,0,  pos,10,  cmd, goto,10
+631.0, elevID,1,  pos,7,  cmd, goto,7
+632.0, elevID,0,  pos,10,  cmd, goto,10
+632.0, elevID,1,  pos,7,  cmd, goto,7
+633.0, elevID,0,  pos,10,  cmd, goto,10
+633.0, elevID,1,  pos,7,  cmd, goto,7
+634.0, elevID,0,  pos,10,  cmd, goto,10
+634.0, elevID,1,  pos,7,  cmd, goto,7
+635.0, elevID,0,  pos,10,  cmd, goto,10
+635.0, elevID,1,  pos,7,  cmd, goto,7
+636.0, elevID,0,  pos,10,  cmd, goto,10
+636.0, elevID,1,  pos,7,  cmd, goto,7
+637.0, elevID,0,  pos,10,  cmd, goto,10
+637.0, elevID,1,  pos,7,  cmd, goto,7
+638.0, elevID,0,  pos,10,  cmd, goto,10
+638.0, elevID,1,  pos,7,  cmd, goto,7
+639.0, elevID,0,  pos,10,  cmd, goto,10
+639.0, elevID,1,  pos,7,  cmd, goto,7
+640.0, elevID,0,  pos,10,  cmd, goto,10
+640.0, elevID,1,  pos,7,  cmd, goto,7
+641.0, elevID,0,  pos,10,  cmd, goto,10
+641.0, elevID,1,  pos,7,  cmd, goto,7
+642.0, elevID,0,  pos,10,  cmd, goto,10
+642.0, elevID,1,  pos,7,  cmd, goto,7
+643.0, elevID,0,  pos,10,  cmd, goto,10
+643.0, elevID,1,  pos,7,  cmd, goto,7
+644.0,Elevator call,643.8547514955396,-1,2,1,1, got allocated to elevator, 1
+644.0, elevID,0,  pos,10,  cmd, goto,10
+644.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+645.0, elevID,0,  pos,10,  cmd, goto,10
+645.0, elevID,1,  pos,7,  cmd, goto,7
+646.0, elevID,0,  pos,10,  cmd, goto,10
+646.0, elevID,1,  pos,7,  cmd, goto,7
+647.0, elevID,0,  pos,10,  cmd, goto,10
+647.0, elevID,1,  pos,7,  cmd, goto,7
+648.0, elevID,0,  pos,10,  cmd, goto,10
+648.0, elevID,1,  pos,7,  cmd, goto,7
+649.0, elevID,0,  pos,10,  cmd, goto,10
+649.0, elevID,1,  pos,7,  cmd, goto,7
+650.0, elevID,0,  pos,10,  cmd, goto,10
+650.0, elevID,1,  pos,7,  cmd, goto,7
+651.0, elevID,0,  pos,10,  cmd, goto,10
+651.0, elevID,1,  pos,7,  cmd, goto,7
+652.0, elevID,0,  pos,10,  cmd, goto,10
+652.0, elevID,1,  pos,7,  cmd, goto,7
+653.0, elevID,0,  pos,10,  cmd, goto,10
+653.0, elevID,1,  pos,7,  cmd, goto,7
+654.0, elevID,0,  pos,10,  cmd, goto,10
+654.0, elevID,1,  pos,7,  cmd, goto,7
+655.0, elevID,0,  pos,10,  cmd, goto,10
+655.0, elevID,1,  pos,7,  cmd, goto,7
+656.0, elevID,0,  pos,10,  cmd, goto,10
+656.0, elevID,1,  pos,7,  cmd, goto,7
+657.0, elevID,0,  pos,10,  cmd, goto,10
+657.0, elevID,1,  pos,7,  cmd, goto,7
+658.0, elevID,0,  pos,10,  cmd, goto,10
+658.0, elevID,1,  pos,7,  cmd, goto,7
+659.0, elevID,0,  pos,10,  cmd, goto,10
+659.0, elevID,1,  pos,7,  cmd, goto,7
+660.0, elevID,0,  pos,10,  cmd, goto,10
+660.0, elevID,1,  pos,7,  cmd, goto,7
+661.0,Elevator call,660.0732907797126,6,10,1,1, got allocated to elevator, 1
+661.0, elevID,0,  pos,10,  cmd, goto,10
+661.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,6,  the elevator is not moving!
+662.0,Elevator call,661.0420820268716,-1,3,1,1, got allocated to elevator, 1
+662.0, elevID,0,  pos,10,  cmd, goto,10
+662.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+663.0,Elevator call,662.1730527520776,-1,5,1,1, got allocated to elevator, 1
+663.0, elevID,0,  pos,10,  cmd, goto,10
+663.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+664.0, elevID,0,  pos,10,  cmd, goto,10
+664.0, elevID,1,  pos,7,  cmd, goto,7
+665.0, elevID,0,  pos,10,  cmd, goto,10
+665.0, elevID,1,  pos,7,  cmd, goto,7
+666.0,Elevator call,665.1155548533167,-1,8,1,1, got allocated to elevator, 1
+666.0, elevID,0,  pos,10,  cmd, goto,10
+666.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+667.0,Elevator call,666.0340294605869,4,0,1,1, got allocated to elevator, 1
+667.0,Elevator call,666.2411586665262,5,-1,1,1, got allocated to elevator, 1
+667.0, elevID,0,  pos,10,  cmd, goto,10
+667.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,4,  the elevator is not moving!
+668.0, elevID,0,  pos,10,  cmd, goto,10
+668.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,5,  the elevator is not moving!
+669.0, elevID,0,  pos,10,  cmd, goto,10
+669.0, elevID,1,  pos,7,  cmd, goto,7
+670.0, elevID,0,  pos,10,  cmd, goto,10
+670.0, elevID,1,  pos,7,  cmd, goto,7
+671.0, elevID,0,  pos,10,  cmd, goto,10
+671.0, elevID,1,  pos,7,  cmd, goto,7
+672.0, elevID,0,  pos,10,  cmd, goto,10
+672.0, elevID,1,  pos,7,  cmd, goto,7
+673.0,Elevator call,672.677314157026,0,-1,1,1, got allocated to elevator, 1
+673.0, elevID,0,  pos,10,  cmd, goto,10
+673.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+674.0, elevID,0,  pos,10,  cmd, goto,10
+674.0, elevID,1,  pos,7,  cmd, goto,7
+675.0, elevID,0,  pos,10,  cmd, goto,10
+675.0, elevID,1,  pos,7,  cmd, goto,7
+676.0, elevID,0,  pos,10,  cmd, goto,10
+676.0, elevID,1,  pos,7,  cmd, goto,7
+677.0, elevID,0,  pos,10,  cmd, goto,10
+677.0, elevID,1,  pos,7,  cmd, goto,7
+678.0,Elevator call,677.7341948387335,0,-1,1,1, got allocated to elevator, 1
+678.0, elevID,0,  pos,10,  cmd, goto,10
+678.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+679.0,Elevator call,678.9953584914538,-1,-2,1,1, got allocated to elevator, 1
+679.0, elevID,0,  pos,10,  cmd, goto,10
+679.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+680.0, elevID,0,  pos,10,  cmd, goto,10
+680.0, elevID,1,  pos,7,  cmd, goto,7
+681.0, elevID,0,  pos,10,  cmd, goto,10
+681.0, elevID,1,  pos,7,  cmd, goto,7
+682.0, elevID,0,  pos,10,  cmd, goto,10
+682.0, elevID,1,  pos,7,  cmd, goto,7
+683.0, elevID,0,  pos,10,  cmd, goto,10
+683.0, elevID,1,  pos,7,  cmd, goto,7
+684.0, elevID,0,  pos,10,  cmd, goto,10
+684.0, elevID,1,  pos,7,  cmd, goto,7
+685.0, elevID,0,  pos,10,  cmd, goto,10
+685.0, elevID,1,  pos,7,  cmd, goto,7
+686.0, elevID,0,  pos,10,  cmd, goto,10
+686.0, elevID,1,  pos,7,  cmd, goto,7
+687.0, elevID,0,  pos,10,  cmd, goto,10
+687.0, elevID,1,  pos,7,  cmd, goto,7
+688.0, elevID,0,  pos,10,  cmd, goto,10
+688.0, elevID,1,  pos,7,  cmd, goto,7
+689.0, elevID,0,  pos,10,  cmd, goto,10
+689.0, elevID,1,  pos,7,  cmd, goto,7
+690.0, elevID,0,  pos,10,  cmd, goto,10
+690.0, elevID,1,  pos,7,  cmd, goto,7
+691.0, elevID,0,  pos,10,  cmd, goto,10
+691.0, elevID,1,  pos,7,  cmd, goto,7
+692.0, elevID,0,  pos,10,  cmd, goto,10
+692.0, elevID,1,  pos,7,  cmd, goto,7
+693.0, elevID,0,  pos,10,  cmd, goto,10
+693.0, elevID,1,  pos,7,  cmd, goto,7
+694.0, elevID,0,  pos,10,  cmd, goto,10
+694.0, elevID,1,  pos,7,  cmd, goto,7
+695.0, elevID,0,  pos,10,  cmd, goto,10
+695.0, elevID,1,  pos,7,  cmd, goto,7
+696.0,Elevator call,695.2239881566923,0,10,1,1, got allocated to elevator, 1
+696.0, elevID,0,  pos,10,  cmd, goto,10
+696.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+697.0, elevID,0,  pos,10,  cmd, goto,10
+697.0, elevID,1,  pos,7,  cmd, goto,7
+698.0, elevID,0,  pos,10,  cmd, goto,10
+698.0, elevID,1,  pos,7,  cmd, goto,7
+699.0, elevID,0,  pos,10,  cmd, goto,10
+699.0, elevID,1,  pos,7,  cmd, goto,7
+700.0, elevID,0,  pos,10,  cmd, goto,10
+700.0, elevID,1,  pos,7,  cmd, goto,7
+701.0, elevID,0,  pos,10,  cmd, goto,10
+701.0, elevID,1,  pos,7,  cmd, goto,7
+702.0, elevID,0,  pos,10,  cmd, goto,10
+702.0, elevID,1,  pos,7,  cmd, goto,7
+703.0, elevID,0,  pos,10,  cmd, goto,10
+703.0, elevID,1,  pos,7,  cmd, goto,7
+704.0, elevID,0,  pos,10,  cmd, goto,10
+704.0, elevID,1,  pos,7,  cmd, goto,7
+705.0, elevID,0,  pos,10,  cmd, goto,10
+705.0, elevID,1,  pos,7,  cmd, goto,7
+706.0, elevID,0,  pos,10,  cmd, goto,10
+706.0, elevID,1,  pos,7,  cmd, goto,7
+707.0,Elevator call,706.1583474999188,-1,-2,1,1, got allocated to elevator, 1
+707.0, elevID,0,  pos,10,  cmd, goto,10
+707.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+708.0, elevID,0,  pos,10,  cmd, goto,10
+708.0, elevID,1,  pos,7,  cmd, goto,7
+709.0, elevID,0,  pos,10,  cmd, goto,10
+709.0, elevID,1,  pos,7,  cmd, goto,7
+710.0, elevID,0,  pos,10,  cmd, goto,10
+710.0, elevID,1,  pos,7,  cmd, goto,7
+711.0,Elevator call,710.3249770041223,0,1,1,1, got allocated to elevator, 1
+711.0, elevID,0,  pos,10,  cmd, goto,10
+711.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+712.0, elevID,0,  pos,10,  cmd, goto,10
+712.0, elevID,1,  pos,7,  cmd, goto,7
+713.0, elevID,0,  pos,10,  cmd, goto,10
+713.0, elevID,1,  pos,7,  cmd, goto,7
+714.0,Elevator call,713.0191971398395,1,0,1,1, got allocated to elevator, 1
+714.0,Elevator call,713.2499766424826,10,-1,1,0, got allocated to elevator, 0
+714.0,Elev,0,  arrived at src, 10, Elevator call,713.2499766424826,10,-1,2,0
+714.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,10,  the elevator is not moving!
+714.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,1,  the elevator is not moving!
+715.0, elevID,0,  pos,10,  cmd, goto,10
+715.0, elevID,1,  pos,7,  cmd, goto,7
+716.0, elevID,0,  pos,10,  cmd, goto,10
+716.0, elevID,1,  pos,7,  cmd, goto,7
+717.0, elevID,0,  pos,10,  cmd, goto,10
+717.0, elevID,1,  pos,7,  cmd, goto,7
+718.0, elevID,0,  pos,10,  cmd, goto,10
+718.0, elevID,1,  pos,7,  cmd, goto,7
+719.0, elevID,0,  pos,10,  cmd, goto,10
+719.0, elevID,1,  pos,7,  cmd, goto,7
+720.0, elevID,0,  pos,10,  cmd, goto,10
+720.0, elevID,1,  pos,7,  cmd, goto,7
+721.0, elevID,0,  pos,10,  cmd, goto,10
+721.0, elevID,1,  pos,7,  cmd, goto,7
+722.0, elevID,0,  pos,10,  cmd, goto,10
+722.0, elevID,1,  pos,7,  cmd, goto,7
+723.0,Elevator call,722.6161212799507,10,0,1,0, got allocated to elevator, 0
+723.0,Elev,0,  arrived at src, 10, Elevator call,722.6161212799507,10,0,2,0
+723.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,10,  the elevator is not moving!
+723.0, elevID,1,  pos,7,  cmd, goto,7
+724.0, elevID,0,  pos,10,  cmd, goto,10
+724.0, elevID,1,  pos,7,  cmd, goto,7
+725.0, elevID,0,  pos,10,  cmd, goto,10
+725.0, elevID,1,  pos,7,  cmd, goto,7
+726.0, elevID,0,  pos,10,  cmd, goto,10
+726.0, elevID,1,  pos,7,  cmd, goto,7
+727.0, elevID,0,  pos,10,  cmd, goto,10
+727.0, elevID,1,  pos,7,  cmd, goto,7
+728.0,Elevator call,727.514602863032,-1,0,1,1, got allocated to elevator, 1
+728.0, elevID,0,  pos,10,  cmd, goto,10
+728.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+729.0, elevID,0,  pos,10,  cmd, goto,10
+729.0, elevID,1,  pos,7,  cmd, goto,7
+730.0, elevID,0,  pos,10,  cmd, goto,10
+730.0, elevID,1,  pos,7,  cmd, goto,7
+731.0, elevID,0,  pos,10,  cmd, goto,10
+731.0, elevID,1,  pos,7,  cmd, goto,7
+732.0, elevID,0,  pos,10,  cmd, goto,10
+732.0, elevID,1,  pos,7,  cmd, goto,7
+733.0,Elevator call,732.9746341348998,6,-1,1,1, got allocated to elevator, 1
+733.0, elevID,0,  pos,10,  cmd, goto,10
+733.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,6,  the elevator is not moving!
+734.0, elevID,0,  pos,10,  cmd, goto,10
+734.0, elevID,1,  pos,7,  cmd, goto,7
+735.0, elevID,0,  pos,10,  cmd, goto,10
+735.0, elevID,1,  pos,7,  cmd, goto,7
+736.0, elevID,0,  pos,10,  cmd, goto,10
+736.0, elevID,1,  pos,7,  cmd, goto,7
+737.0, elevID,0,  pos,10,  cmd, goto,10
+737.0, elevID,1,  pos,7,  cmd, goto,7
+738.0,Elevator call,737.314720213409,1,0,1,1, got allocated to elevator, 1
+738.0, elevID,0,  pos,10,  cmd, goto,10
+738.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,1,  the elevator is not moving!
+739.0, elevID,0,  pos,10,  cmd, goto,10
+739.0, elevID,1,  pos,7,  cmd, goto,7
+740.0, elevID,0,  pos,10,  cmd, goto,10
+740.0, elevID,1,  pos,7,  cmd, goto,7
+741.0, elevID,0,  pos,10,  cmd, goto,10
+741.0, elevID,1,  pos,7,  cmd, goto,7
+742.0, elevID,0,  pos,10,  cmd, goto,10
+742.0, elevID,1,  pos,7,  cmd, goto,7
+743.0, elevID,0,  pos,10,  cmd, goto,10
+743.0, elevID,1,  pos,7,  cmd, goto,7
+744.0, elevID,0,  pos,10,  cmd, goto,10
+744.0, elevID,1,  pos,7,  cmd, goto,7
+745.0, elevID,0,  pos,10,  cmd, goto,10
+745.0, elevID,1,  pos,7,  cmd, goto,7
+746.0, elevID,0,  pos,10,  cmd, goto,10
+746.0, elevID,1,  pos,7,  cmd, goto,7
+747.0, elevID,0,  pos,10,  cmd, goto,10
+747.0, elevID,1,  pos,7,  cmd, goto,7
+748.0, elevID,0,  pos,10,  cmd, goto,10
+748.0, elevID,1,  pos,7,  cmd, goto,7
+749.0, elevID,0,  pos,10,  cmd, goto,10
+749.0, elevID,1,  pos,7,  cmd, goto,7
+750.0, elevID,0,  pos,10,  cmd, goto,10
+750.0, elevID,1,  pos,7,  cmd, goto,7
+751.0, elevID,0,  pos,10,  cmd, goto,10
+751.0, elevID,1,  pos,7,  cmd, goto,7
+752.0, elevID,0,  pos,10,  cmd, goto,10
+752.0, elevID,1,  pos,7,  cmd, goto,7
+753.0, elevID,0,  pos,10,  cmd, goto,10
+753.0, elevID,1,  pos,7,  cmd, goto,7
+754.0, elevID,0,  pos,10,  cmd, goto,10
+754.0, elevID,1,  pos,7,  cmd, goto,7
+755.0, elevID,0,  pos,10,  cmd, goto,10
+755.0, elevID,1,  pos,7,  cmd, goto,7
+756.0, elevID,0,  pos,10,  cmd, goto,10
+756.0, elevID,1,  pos,7,  cmd, goto,7
+757.0, elevID,0,  pos,10,  cmd, goto,10
+757.0, elevID,1,  pos,7,  cmd, goto,7
+758.0, elevID,0,  pos,10,  cmd, goto,10
+758.0, elevID,1,  pos,7,  cmd, goto,7
+759.0, elevID,0,  pos,10,  cmd, goto,10
+759.0, elevID,1,  pos,7,  cmd, goto,7
+760.0, elevID,0,  pos,10,  cmd, goto,10
+760.0, elevID,1,  pos,7,  cmd, goto,7
+761.0, elevID,0,  pos,10,  cmd, goto,10
+761.0, elevID,1,  pos,7,  cmd, goto,7
+762.0, elevID,0,  pos,10,  cmd, goto,10
+762.0, elevID,1,  pos,7,  cmd, goto,7
+763.0, elevID,0,  pos,10,  cmd, goto,10
+763.0, elevID,1,  pos,7,  cmd, goto,7
+764.0, elevID,0,  pos,10,  cmd, goto,10
+764.0, elevID,1,  pos,7,  cmd, goto,7
+765.0, elevID,0,  pos,10,  cmd, goto,10
+765.0, elevID,1,  pos,7,  cmd, goto,7
+766.0, elevID,0,  pos,10,  cmd, goto,10
+766.0, elevID,1,  pos,7,  cmd, goto,7
+767.0, elevID,0,  pos,10,  cmd, goto,10
+767.0, elevID,1,  pos,7,  cmd, goto,7
+768.0, elevID,0,  pos,10,  cmd, goto,10
+768.0, elevID,1,  pos,7,  cmd, goto,7
+769.0, elevID,0,  pos,10,  cmd, goto,10
+769.0, elevID,1,  pos,7,  cmd, goto,7
+770.0, elevID,0,  pos,10,  cmd, goto,10
+770.0, elevID,1,  pos,7,  cmd, goto,7
+771.0, elevID,0,  pos,10,  cmd, goto,10
+771.0, elevID,1,  pos,7,  cmd, goto,7
+772.0, elevID,0,  pos,10,  cmd, goto,10
+772.0, elevID,1,  pos,7,  cmd, goto,7
+773.0, elevID,0,  pos,10,  cmd, goto,10
+773.0, elevID,1,  pos,7,  cmd, goto,7
+774.0, elevID,0,  pos,10,  cmd, goto,10
+774.0, elevID,1,  pos,7,  cmd, goto,7
+775.0, elevID,0,  pos,10,  cmd, goto,10
+775.0, elevID,1,  pos,7,  cmd, goto,7
+776.0, elevID,0,  pos,10,  cmd, goto,10
+776.0, elevID,1,  pos,7,  cmd, goto,7
+777.0, elevID,0,  pos,10,  cmd, goto,10
+777.0, elevID,1,  pos,7,  cmd, goto,7
+778.0, elevID,0,  pos,10,  cmd, goto,10
+778.0, elevID,1,  pos,7,  cmd, goto,7
+779.0, elevID,0,  pos,10,  cmd, goto,10
+779.0, elevID,1,  pos,7,  cmd, goto,7
+780.0,Elevator call,779.399691386574,-1,5,1,1, got allocated to elevator, 1
+780.0, elevID,0,  pos,10,  cmd, goto,10
+780.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+781.0, elevID,0,  pos,10,  cmd, goto,10
+781.0, elevID,1,  pos,7,  cmd, goto,7
+782.0, elevID,0,  pos,10,  cmd, goto,10
+782.0, elevID,1,  pos,7,  cmd, goto,7
+783.0, elevID,0,  pos,10,  cmd, goto,10
+783.0, elevID,1,  pos,7,  cmd, goto,7
+784.0, elevID,0,  pos,10,  cmd, goto,10
+784.0, elevID,1,  pos,7,  cmd, goto,7
+785.0, elevID,0,  pos,10,  cmd, goto,10
+785.0, elevID,1,  pos,7,  cmd, goto,7
+786.0, elevID,0,  pos,10,  cmd, goto,10
+786.0, elevID,1,  pos,7,  cmd, goto,7
+787.0, elevID,0,  pos,10,  cmd, goto,10
+787.0, elevID,1,  pos,7,  cmd, goto,7
+788.0, elevID,0,  pos,10,  cmd, goto,10
+788.0, elevID,1,  pos,7,  cmd, goto,7
+789.0, elevID,0,  pos,10,  cmd, goto,10
+789.0, elevID,1,  pos,7,  cmd, goto,7
+790.0, elevID,0,  pos,10,  cmd, goto,10
+790.0, elevID,1,  pos,7,  cmd, goto,7
+791.0, elevID,0,  pos,10,  cmd, goto,10
+791.0, elevID,1,  pos,7,  cmd, goto,7
+792.0, elevID,0,  pos,10,  cmd, goto,10
+792.0, elevID,1,  pos,7,  cmd, goto,7
+793.0, elevID,0,  pos,10,  cmd, goto,10
+793.0, elevID,1,  pos,7,  cmd, goto,7
+794.0, elevID,0,  pos,10,  cmd, goto,10
+794.0, elevID,1,  pos,7,  cmd, goto,7
+795.0, elevID,0,  pos,10,  cmd, goto,10
+795.0, elevID,1,  pos,7,  cmd, goto,7
+796.0, elevID,0,  pos,10,  cmd, goto,10
+796.0, elevID,1,  pos,7,  cmd, goto,7
+797.0, elevID,0,  pos,10,  cmd, goto,10
+797.0, elevID,1,  pos,7,  cmd, goto,7
+798.0, elevID,0,  pos,10,  cmd, goto,10
+798.0, elevID,1,  pos,7,  cmd, goto,7
+799.0, elevID,0,  pos,10,  cmd, goto,10
+799.0, elevID,1,  pos,7,  cmd, goto,7
+800.0, elevID,0,  pos,10,  cmd, goto,10
+800.0, elevID,1,  pos,7,  cmd, goto,7
+801.0, elevID,0,  pos,10,  cmd, goto,10
+801.0, elevID,1,  pos,7,  cmd, goto,7
+802.0, elevID,0,  pos,10,  cmd, goto,10
+802.0, elevID,1,  pos,7,  cmd, goto,7
+803.0, elevID,0,  pos,10,  cmd, goto,10
+803.0, elevID,1,  pos,7,  cmd, goto,7
+804.0, elevID,0,  pos,10,  cmd, goto,10
+804.0, elevID,1,  pos,7,  cmd, goto,7
+805.0, elevID,0,  pos,10,  cmd, goto,10
+805.0, elevID,1,  pos,7,  cmd, goto,7
+806.0,Elevator call,805.6754743307536,-1,-2,1,1, got allocated to elevator, 1
+806.0, elevID,0,  pos,10,  cmd, goto,10
+806.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+807.0, elevID,0,  pos,10,  cmd, goto,10
+807.0, elevID,1,  pos,7,  cmd, goto,7
+808.0, elevID,0,  pos,10,  cmd, goto,10
+808.0, elevID,1,  pos,7,  cmd, goto,7
+809.0, elevID,0,  pos,10,  cmd, goto,10
+809.0, elevID,1,  pos,7,  cmd, goto,7
+810.0, elevID,0,  pos,10,  cmd, goto,10
+810.0, elevID,1,  pos,7,  cmd, goto,7
+811.0,Elevator call,810.4469089359914,2,0,1,1, got allocated to elevator, 1
+811.0, elevID,0,  pos,10,  cmd, goto,10
+811.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,2,  the elevator is not moving!
+812.0, elevID,0,  pos,10,  cmd, goto,10
+812.0, elevID,1,  pos,7,  cmd, goto,7
+813.0, elevID,0,  pos,10,  cmd, goto,10
+813.0, elevID,1,  pos,7,  cmd, goto,7
+814.0, elevID,0,  pos,10,  cmd, goto,10
+814.0, elevID,1,  pos,7,  cmd, goto,7
+815.0, elevID,0,  pos,10,  cmd, goto,10
+815.0, elevID,1,  pos,7,  cmd, goto,7
+816.0, elevID,0,  pos,10,  cmd, goto,10
+816.0, elevID,1,  pos,7,  cmd, goto,7
+817.0,Elevator call,816.1516998390152,7,-1,1,1, got allocated to elevator, 1
+817.0, elevID,0,  pos,10,  cmd, goto,10
+817.0,Elev,1,  arrived at src, 7, Elevator call,816.1516998390152,7,-1,2,1
+817.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,7,  the elevator is not moving!
+818.0, elevID,0,  pos,10,  cmd, goto,10
+818.0, elevID,1,  pos,7,  cmd, goto,7
+819.0, elevID,0,  pos,10,  cmd, goto,10
+819.0, elevID,1,  pos,7,  cmd, goto,7
+820.0, elevID,0,  pos,10,  cmd, goto,10
+820.0, elevID,1,  pos,7,  cmd, goto,7
+821.0, elevID,0,  pos,10,  cmd, goto,10
+821.0, elevID,1,  pos,7,  cmd, goto,7
+822.0, elevID,0,  pos,10,  cmd, goto,10
+822.0, elevID,1,  pos,7,  cmd, goto,7
+823.0, elevID,0,  pos,10,  cmd, goto,10
+823.0, elevID,1,  pos,7,  cmd, goto,7
+824.0, elevID,0,  pos,10,  cmd, goto,10
+824.0, elevID,1,  pos,7,  cmd, goto,7
+825.0, elevID,0,  pos,10,  cmd, goto,10
+825.0, elevID,1,  pos,7,  cmd, goto,7
+826.0,Elevator call,825.4575184586336,7,0,1,1, got allocated to elevator, 1
+826.0, elevID,0,  pos,10,  cmd, goto,10
+826.0,Elev,1,  arrived at src, 7, Elevator call,825.4575184586336,7,0,2,1
+826.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,7,  the elevator is not moving!
+827.0, elevID,0,  pos,10,  cmd, goto,10
+827.0, elevID,1,  pos,7,  cmd, goto,7
+828.0, elevID,0,  pos,10,  cmd, goto,10
+828.0, elevID,1,  pos,7,  cmd, goto,7
+829.0, elevID,0,  pos,10,  cmd, goto,10
+829.0, elevID,1,  pos,7,  cmd, goto,7
+830.0, elevID,0,  pos,10,  cmd, goto,10
+830.0, elevID,1,  pos,7,  cmd, goto,7
+831.0, elevID,0,  pos,10,  cmd, goto,10
+831.0, elevID,1,  pos,7,  cmd, goto,7
+832.0, elevID,0,  pos,10,  cmd, goto,10
+832.0, elevID,1,  pos,7,  cmd, goto,7
+833.0, elevID,0,  pos,10,  cmd, goto,10
+833.0, elevID,1,  pos,7,  cmd, goto,7
+834.0, elevID,0,  pos,10,  cmd, goto,10
+834.0, elevID,1,  pos,7,  cmd, goto,7
+835.0, elevID,0,  pos,10,  cmd, goto,10
+835.0, elevID,1,  pos,7,  cmd, goto,7
+836.0, elevID,0,  pos,10,  cmd, goto,10
+836.0, elevID,1,  pos,7,  cmd, goto,7
+837.0, elevID,0,  pos,10,  cmd, goto,10
+837.0, elevID,1,  pos,7,  cmd, goto,7
+838.0, elevID,0,  pos,10,  cmd, goto,10
+838.0, elevID,1,  pos,7,  cmd, goto,7
+839.0, elevID,0,  pos,10,  cmd, goto,10
+839.0, elevID,1,  pos,7,  cmd, goto,7
+840.0,Elevator call,839.8525652620532,0,1,1,1, got allocated to elevator, 1
+840.0, elevID,0,  pos,10,  cmd, goto,10
+840.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+841.0, elevID,0,  pos,10,  cmd, goto,10
+841.0, elevID,1,  pos,7,  cmd, goto,7
+842.0, elevID,0,  pos,10,  cmd, goto,10
+842.0, elevID,1,  pos,7,  cmd, goto,7
+843.0, elevID,0,  pos,10,  cmd, goto,10
+843.0, elevID,1,  pos,7,  cmd, goto,7
+844.0, elevID,0,  pos,10,  cmd, goto,10
+844.0, elevID,1,  pos,7,  cmd, goto,7
+845.0, elevID,0,  pos,10,  cmd, goto,10
+845.0, elevID,1,  pos,7,  cmd, goto,7
+846.0, elevID,0,  pos,10,  cmd, goto,10
+846.0, elevID,1,  pos,7,  cmd, goto,7
+847.0, elevID,0,  pos,10,  cmd, goto,10
+847.0, elevID,1,  pos,7,  cmd, goto,7
+848.0, elevID,0,  pos,10,  cmd, goto,10
+848.0, elevID,1,  pos,7,  cmd, goto,7
+849.0, elevID,0,  pos,10,  cmd, goto,10
+849.0, elevID,1,  pos,7,  cmd, goto,7
+850.0, elevID,0,  pos,10,  cmd, goto,10
+850.0, elevID,1,  pos,7,  cmd, goto,7
+851.0, elevID,0,  pos,10,  cmd, goto,10
+851.0, elevID,1,  pos,7,  cmd, goto,7
+852.0, elevID,0,  pos,10,  cmd, goto,10
+852.0, elevID,1,  pos,7,  cmd, goto,7
+853.0, elevID,0,  pos,10,  cmd, goto,10
+853.0, elevID,1,  pos,7,  cmd, goto,7
+854.0, elevID,0,  pos,10,  cmd, goto,10
+854.0, elevID,1,  pos,7,  cmd, goto,7
+855.0,Elevator call,854.2002278085795,6,-1,1,1, got allocated to elevator, 1
+855.0, elevID,0,  pos,10,  cmd, goto,10
+855.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,6,  the elevator is not moving!
+856.0, elevID,0,  pos,10,  cmd, goto,10
+856.0, elevID,1,  pos,7,  cmd, goto,7
+857.0, elevID,0,  pos,10,  cmd, goto,10
+857.0, elevID,1,  pos,7,  cmd, goto,7
+858.0, elevID,0,  pos,10,  cmd, goto,10
+858.0, elevID,1,  pos,7,  cmd, goto,7
+859.0, elevID,0,  pos,10,  cmd, goto,10
+859.0, elevID,1,  pos,7,  cmd, goto,7
+860.0, elevID,0,  pos,10,  cmd, goto,10
+860.0, elevID,1,  pos,7,  cmd, goto,7
+861.0, elevID,0,  pos,10,  cmd, goto,10
+861.0, elevID,1,  pos,7,  cmd, goto,7
+862.0, elevID,0,  pos,10,  cmd, goto,10
+862.0, elevID,1,  pos,7,  cmd, goto,7
+863.0, elevID,0,  pos,10,  cmd, goto,10
+863.0, elevID,1,  pos,7,  cmd, goto,7
+864.0,Elevator call,863.893291272948,0,-1,1,1, got allocated to elevator, 1
+864.0, elevID,0,  pos,10,  cmd, goto,10
+864.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+865.0, elevID,0,  pos,10,  cmd, goto,10
+865.0, elevID,1,  pos,7,  cmd, goto,7
+866.0, elevID,0,  pos,10,  cmd, goto,10
+866.0, elevID,1,  pos,7,  cmd, goto,7
+867.0, elevID,0,  pos,10,  cmd, goto,10
+867.0, elevID,1,  pos,7,  cmd, goto,7
+868.0, elevID,0,  pos,10,  cmd, goto,10
+868.0, elevID,1,  pos,7,  cmd, goto,7
+869.0, elevID,0,  pos,10,  cmd, goto,10
+869.0, elevID,1,  pos,7,  cmd, goto,7
+870.0, elevID,0,  pos,10,  cmd, goto,10
+870.0, elevID,1,  pos,7,  cmd, goto,7
+871.0,Elevator call,870.5053023797483,0,7,1,1, got allocated to elevator, 1
+871.0, elevID,0,  pos,10,  cmd, goto,10
+871.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+872.0, elevID,0,  pos,10,  cmd, goto,10
+872.0, elevID,1,  pos,7,  cmd, goto,7
+873.0, elevID,0,  pos,10,  cmd, goto,10
+873.0, elevID,1,  pos,7,  cmd, goto,7
+874.0, elevID,0,  pos,10,  cmd, goto,10
+874.0, elevID,1,  pos,7,  cmd, goto,7
+875.0, elevID,0,  pos,10,  cmd, goto,10
+875.0, elevID,1,  pos,7,  cmd, goto,7
+876.0, elevID,0,  pos,10,  cmd, goto,10
+876.0, elevID,1,  pos,7,  cmd, goto,7
+877.0, elevID,0,  pos,10,  cmd, goto,10
+877.0, elevID,1,  pos,7,  cmd, goto,7
+878.0, elevID,0,  pos,10,  cmd, goto,10
+878.0, elevID,1,  pos,7,  cmd, goto,7
+879.0, elevID,0,  pos,10,  cmd, goto,10
+879.0, elevID,1,  pos,7,  cmd, goto,7
+880.0, elevID,0,  pos,10,  cmd, goto,10
+880.0, elevID,1,  pos,7,  cmd, goto,7
+881.0, elevID,0,  pos,10,  cmd, goto,10
+881.0, elevID,1,  pos,7,  cmd, goto,7
+882.0, elevID,0,  pos,10,  cmd, goto,10
+882.0, elevID,1,  pos,7,  cmd, goto,7
+883.0, elevID,0,  pos,10,  cmd, goto,10
+883.0, elevID,1,  pos,7,  cmd, goto,7
+884.0, elevID,0,  pos,10,  cmd, goto,10
+884.0, elevID,1,  pos,7,  cmd, goto,7
+885.0, elevID,0,  pos,10,  cmd, goto,10
+885.0, elevID,1,  pos,7,  cmd, goto,7
+886.0, elevID,0,  pos,10,  cmd, goto,10
+886.0, elevID,1,  pos,7,  cmd, goto,7
+887.0,Elevator call,886.5649993239458,-1,-2,1,1, got allocated to elevator, 1
+887.0, elevID,0,  pos,10,  cmd, goto,10
+887.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,-1,  the elevator is not moving!
+888.0, elevID,0,  pos,10,  cmd, goto,10
+888.0, elevID,1,  pos,7,  cmd, goto,7
+889.0, elevID,0,  pos,10,  cmd, goto,10
+889.0, elevID,1,  pos,7,  cmd, goto,7
+890.0, elevID,0,  pos,10,  cmd, goto,10
+890.0, elevID,1,  pos,7,  cmd, goto,7
+891.0, elevID,0,  pos,10,  cmd, goto,10
+891.0, elevID,1,  pos,7,  cmd, goto,7
+892.0, elevID,0,  pos,10,  cmd, goto,10
+892.0, elevID,1,  pos,7,  cmd, goto,7
+893.0,Elevator call,892.5212150591021,9,-1,1,0, got allocated to elevator, 0
+893.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,9,  the elevator is not moving!
+893.0, elevID,1,  pos,7,  cmd, goto,7
+894.0, elevID,0,  pos,10,  cmd, goto,10
+894.0, elevID,1,  pos,7,  cmd, goto,7
+895.0, elevID,0,  pos,10,  cmd, goto,10
+895.0, elevID,1,  pos,7,  cmd, goto,7
+896.0, elevID,0,  pos,10,  cmd, goto,10
+896.0, elevID,1,  pos,7,  cmd, goto,7
+897.0, elevID,0,  pos,10,  cmd, goto,10
+897.0, elevID,1,  pos,7,  cmd, goto,7
+898.0, elevID,0,  pos,10,  cmd, goto,10
+898.0, elevID,1,  pos,7,  cmd, goto,7
+899.0, elevID,0,  pos,10,  cmd, goto,10
+899.0, elevID,1,  pos,7,  cmd, goto,7
+900.0, elevID,0,  pos,10,  cmd, goto,10
+900.0, elevID,1,  pos,7,  cmd, goto,7
+901.0, elevID,0,  pos,10,  cmd, goto,10
+901.0, elevID,1,  pos,7,  cmd, goto,7
+902.0, elevID,0,  pos,10,  cmd, goto,10
+902.0, elevID,1,  pos,7,  cmd, goto,7
+903.0, elevID,0,  pos,10,  cmd, goto,10
+903.0, elevID,1,  pos,7,  cmd, goto,7
+904.0, elevID,0,  pos,10,  cmd, goto,10
+904.0, elevID,1,  pos,7,  cmd, goto,7
+905.0, elevID,0,  pos,10,  cmd, goto,10
+905.0, elevID,1,  pos,7,  cmd, goto,7
+906.0, elevID,0,  pos,10,  cmd, goto,10
+906.0, elevID,1,  pos,7,  cmd, goto,7
+907.0, elevID,0,  pos,10,  cmd, goto,10
+907.0, elevID,1,  pos,7,  cmd, goto,7
+908.0, elevID,0,  pos,10,  cmd, goto,10
+908.0, elevID,1,  pos,7,  cmd, goto,7
+909.0, elevID,0,  pos,10,  cmd, goto,10
+909.0, elevID,1,  pos,7,  cmd, goto,7
+910.0, elevID,0,  pos,10,  cmd, goto,10
+910.0, elevID,1,  pos,7,  cmd, goto,7
+911.0,Elevator call,910.5388559417848,6,5,1,1, got allocated to elevator, 1
+911.0, elevID,0,  pos,10,  cmd, goto,10
+911.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,6,  the elevator is not moving!
+912.0, elevID,0,  pos,10,  cmd, goto,10
+912.0, elevID,1,  pos,7,  cmd, goto,7
+913.0, elevID,0,  pos,10,  cmd, goto,10
+913.0, elevID,1,  pos,7,  cmd, goto,7
+914.0, elevID,0,  pos,10,  cmd, goto,10
+914.0, elevID,1,  pos,7,  cmd, goto,7
+915.0, elevID,0,  pos,10,  cmd, goto,10
+915.0, elevID,1,  pos,7,  cmd, goto,7
+916.0,Elevator call,915.9490574608818,4,-1,1,1, got allocated to elevator, 1
+916.0, elevID,0,  pos,10,  cmd, goto,10
+916.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,4,  the elevator is not moving!
+917.0, elevID,0,  pos,10,  cmd, goto,10
+917.0, elevID,1,  pos,7,  cmd, goto,7
+918.0, elevID,0,  pos,10,  cmd, goto,10
+918.0, elevID,1,  pos,7,  cmd, goto,7
+919.0, elevID,0,  pos,10,  cmd, goto,10
+919.0, elevID,1,  pos,7,  cmd, goto,7
+920.0, elevID,0,  pos,10,  cmd, goto,10
+920.0, elevID,1,  pos,7,  cmd, goto,7
+921.0, elevID,0,  pos,10,  cmd, goto,10
+921.0, elevID,1,  pos,7,  cmd, goto,7
+922.0, elevID,0,  pos,10,  cmd, goto,10
+922.0, elevID,1,  pos,7,  cmd, goto,7
+923.0, elevID,0,  pos,10,  cmd, goto,10
+923.0, elevID,1,  pos,7,  cmd, goto,7
+924.0, elevID,0,  pos,10,  cmd, goto,10
+924.0, elevID,1,  pos,7,  cmd, goto,7
+925.0, elevID,0,  pos,10,  cmd, goto,10
+925.0, elevID,1,  pos,7,  cmd, goto,7
+926.0, elevID,0,  pos,10,  cmd, goto,10
+926.0, elevID,1,  pos,7,  cmd, goto,7
+927.0, elevID,0,  pos,10,  cmd, goto,10
+927.0, elevID,1,  pos,7,  cmd, goto,7
+928.0, elevID,0,  pos,10,  cmd, goto,10
+928.0, elevID,1,  pos,7,  cmd, goto,7
+929.0, elevID,0,  pos,10,  cmd, goto,10
+929.0, elevID,1,  pos,7,  cmd, goto,7
+930.0, elevID,0,  pos,10,  cmd, goto,10
+930.0, elevID,1,  pos,7,  cmd, goto,7
+931.0, elevID,0,  pos,10,  cmd, goto,10
+931.0, elevID,1,  pos,7,  cmd, goto,7
+932.0, elevID,0,  pos,10,  cmd, goto,10
+932.0, elevID,1,  pos,7,  cmd, goto,7
+933.0, elevID,0,  pos,10,  cmd, goto,10
+933.0, elevID,1,  pos,7,  cmd, goto,7
+934.0,Elevator call,933.8580452488764,7,5,1,1, got allocated to elevator, 1
+934.0, elevID,0,  pos,10,  cmd, goto,10
+934.0,Elev,1,  arrived at src, 7, Elevator call,933.8580452488764,7,5,2,1
+934.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,7,  the elevator is not moving!
+935.0, elevID,0,  pos,10,  cmd, goto,10
+935.0, elevID,1,  pos,7,  cmd, goto,7
+936.0, elevID,0,  pos,10,  cmd, goto,10
+936.0, elevID,1,  pos,7,  cmd, goto,7
+937.0, elevID,0,  pos,10,  cmd, goto,10
+937.0, elevID,1,  pos,7,  cmd, goto,7
+938.0, elevID,0,  pos,10,  cmd, goto,10
+938.0, elevID,1,  pos,7,  cmd, goto,7
+939.0, elevID,0,  pos,10,  cmd, goto,10
+939.0, elevID,1,  pos,7,  cmd, goto,7
+940.0, elevID,0,  pos,10,  cmd, goto,10
+940.0, elevID,1,  pos,7,  cmd, goto,7
+941.0, elevID,0,  pos,10,  cmd, goto,10
+941.0, elevID,1,  pos,7,  cmd, goto,7
+942.0, elevID,0,  pos,10,  cmd, goto,10
+942.0, elevID,1,  pos,7,  cmd, goto,7
+943.0, elevID,0,  pos,10,  cmd, goto,10
+943.0, elevID,1,  pos,7,  cmd, goto,7
+944.0, elevID,0,  pos,10,  cmd, goto,10
+944.0, elevID,1,  pos,7,  cmd, goto,7
+945.0, elevID,0,  pos,10,  cmd, goto,10
+945.0, elevID,1,  pos,7,  cmd, goto,7
+946.0, elevID,0,  pos,10,  cmd, goto,10
+946.0, elevID,1,  pos,7,  cmd, goto,7
+947.0, elevID,0,  pos,10,  cmd, goto,10
+947.0, elevID,1,  pos,7,  cmd, goto,7
+948.0, elevID,0,  pos,10,  cmd, goto,10
+948.0, elevID,1,  pos,7,  cmd, goto,7
+949.0, elevID,0,  pos,10,  cmd, goto,10
+949.0, elevID,1,  pos,7,  cmd, goto,7
+950.0, elevID,0,  pos,10,  cmd, goto,10
+950.0, elevID,1,  pos,7,  cmd, goto,7
+951.0, elevID,0,  pos,10,  cmd, goto,10
+951.0, elevID,1,  pos,7,  cmd, goto,7
+952.0, elevID,0,  pos,10,  cmd, goto,10
+952.0, elevID,1,  pos,7,  cmd, goto,7
+953.0, elevID,0,  pos,10,  cmd, goto,10
+953.0, elevID,1,  pos,7,  cmd, goto,7
+954.0, elevID,0,  pos,10,  cmd, goto,10
+954.0, elevID,1,  pos,7,  cmd, goto,7
+955.0, elevID,0,  pos,10,  cmd, goto,10
+955.0, elevID,1,  pos,7,  cmd, goto,7
+956.0, elevID,0,  pos,10,  cmd, goto,10
+956.0, elevID,1,  pos,7,  cmd, goto,7
+957.0, elevID,0,  pos,10,  cmd, goto,10
+957.0, elevID,1,  pos,7,  cmd, goto,7
+958.0, elevID,0,  pos,10,  cmd, goto,10
+958.0, elevID,1,  pos,7,  cmd, goto,7
+959.0, elevID,0,  pos,10,  cmd, goto,10
+959.0, elevID,1,  pos,7,  cmd, goto,7
+960.0, elevID,0,  pos,10,  cmd, goto,10
+960.0, elevID,1,  pos,7,  cmd, goto,7
+961.0, elevID,0,  pos,10,  cmd, goto,10
+961.0, elevID,1,  pos,7,  cmd, goto,7
+962.0,Elevator call,961.6862855708133,6,-1,1,1, got allocated to elevator, 1
+962.0, elevID,0,  pos,10,  cmd, goto,10
+962.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,6,  the elevator is not moving!
+963.0, elevID,0,  pos,10,  cmd, goto,10
+963.0, elevID,1,  pos,7,  cmd, goto,7
+964.0, elevID,0,  pos,10,  cmd, goto,10
+964.0, elevID,1,  pos,7,  cmd, goto,7
+965.0, elevID,0,  pos,10,  cmd, goto,10
+965.0, elevID,1,  pos,7,  cmd, goto,7
+966.0, elevID,0,  pos,10,  cmd, goto,10
+966.0, elevID,1,  pos,7,  cmd, goto,7
+967.0, elevID,0,  pos,10,  cmd, goto,10
+967.0, elevID,1,  pos,7,  cmd, goto,7
+968.0, elevID,0,  pos,10,  cmd, goto,10
+968.0, elevID,1,  pos,7,  cmd, goto,7
+969.0, elevID,0,  pos,10,  cmd, goto,10
+969.0, elevID,1,  pos,7,  cmd, goto,7
+970.0, elevID,0,  pos,10,  cmd, goto,10
+970.0, elevID,1,  pos,7,  cmd, goto,7
+971.0, elevID,0,  pos,10,  cmd, goto,10
+971.0, elevID,1,  pos,7,  cmd, goto,7
+972.0, elevID,0,  pos,10,  cmd, goto,10
+972.0, elevID,1,  pos,7,  cmd, goto,7
+973.0,Elevator call,972.8032126022729,1,0,1,1, got allocated to elevator, 1
+973.0, elevID,0,  pos,10,  cmd, goto,10
+973.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,1,  the elevator is not moving!
+974.0, elevID,0,  pos,10,  cmd, goto,10
+974.0, elevID,1,  pos,7,  cmd, goto,7
+975.0, elevID,0,  pos,10,  cmd, goto,10
+975.0, elevID,1,  pos,7,  cmd, goto,7
+976.0,Elevator call,975.8361202753667,0,-1,1,1, got allocated to elevator, 1
+976.0, elevID,0,  pos,10,  cmd, goto,10
+976.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,0,  the elevator is not moving!
+977.0, elevID,0,  pos,10,  cmd, goto,10
+977.0, elevID,1,  pos,7,  cmd, goto,7
+978.0, elevID,0,  pos,10,  cmd, goto,10
+978.0, elevID,1,  pos,7,  cmd, goto,7
+979.0,Elevator call,978.5925148564796,10,0,1,0, got allocated to elevator, 0
+979.0,Elevator call,978.6210500641439,10,-1,1,0, got allocated to elevator, 0
+979.0,Elev,0,  arrived at src, 10, Elevator call,978.5925148564796,10,0,2,0
+979.0,Elev,0,  arrived at src, 10, Elevator call,978.6210500641439,10,-1,2,0
+979.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,10,  the elevator is not moving!
+979.0, elevID,1,  pos,7,  cmd, goto,7
+980.0, elevID,0,  pos,10,  cmd, goto,10
+, elevID,0,  pos,10,  WRONG cmd, stop,10,  the elevator is not moving!
+980.0, elevID,1,  pos,7,  cmd, goto,7
+981.0, elevID,0,  pos,10,  cmd, goto,10
+981.0, elevID,1,  pos,7,  cmd, goto,7
+982.0, elevID,0,  pos,10,  cmd, goto,10
+982.0, elevID,1,  pos,7,  cmd, goto,7
+983.0, elevID,0,  pos,10,  cmd, goto,10
+983.0, elevID,1,  pos,7,  cmd, goto,7
+984.0, elevID,0,  pos,10,  cmd, goto,10
+984.0, elevID,1,  pos,7,  cmd, goto,7
+985.0,Elevator call,984.1840185574983,7,0,1,1, got allocated to elevator, 1
+985.0, elevID,0,  pos,10,  cmd, goto,10
+985.0,Elev,1,  arrived at src, 7, Elevator call,984.1840185574983,7,0,2,1
+985.0, elevID,1,  pos,7,  cmd, goto,7
+, elevID,1,  pos,7,  WRONG cmd, stop,7,  the elevator is not moving!
+986.0, elevID,0,  pos,10,  cmd, goto,10
+986.0, elevID,1,  pos,7,  cmd, goto,7
+987.0, elevID,0,  pos,10,  cmd, goto,10
+987.0, elevID,1,  pos,7,  cmd, goto,7
+988.0, elevID,0,  pos,10,  cmd, goto,10
+988.0, elevID,1,  pos,7,  cmd, goto,7
+989.0, elevID,0,  pos,10,  cmd, goto,10
+989.0, elevID,1,  pos,7,  cmd, goto,7
+990.0, elevID,0,  pos,10,  cmd, goto,10
+990.0, elevID,1,  pos,7,  cmd, goto,7
+991.0, elevID,0,  pos,10,  cmd, goto,10
+991.0, elevID,1,  pos,7,  cmd, goto,7
+992.0, elevID,0,  pos,10,  cmd, goto,10
+992.0, elevID,1,  pos,7,  cmd, goto,7
+993.0, elevID,0,  pos,10,  cmd, goto,10
+993.0, elevID,1,  pos,7,  cmd, goto,7
+994.0, elevID,0,  pos,10,  cmd, goto,10
+994.0, elevID,1,  pos,7,  cmd, goto,7
+995.0, elevID,0,  pos,10,  cmd, goto,10
+995.0, elevID,1,  pos,7,  cmd, goto,7
+996.0, elevID,0,  pos,10,  cmd, goto,10
+996.0, elevID,1,  pos,7,  cmd, goto,7
+997.0, elevID,0,  pos,10,  cmd, goto,10
+997.0, elevID,1,  pos,7,  cmd, goto,7
+998.0, elevID,0,  pos,10,  cmd, goto,10
+998.0, elevID,1,  pos,7,  cmd, goto,7
+999.0, elevID,0,  pos,10,  cmd, goto,10
+999.0, elevID,1,  pos,7,  cmd, goto,7
+1000.0,************* Simulation Ended ************
+Code Owners,123456789,  Case,2,  Total waiting time: 44952.792822120195,  average waiting time per call: 449.52792822120193,  unCompleted calls,91,  certificate, -25921665590

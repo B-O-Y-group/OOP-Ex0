@@ -44,19 +44,35 @@ public class algo implements ElevatorAlgo {
     @Override
     public int allocateAnElevator(CallForElevator c) {
 
+        System.out.println("get time :" + c.getTime(c.getState()));
+
+
+        System.out.println("src :" + c.getSrc());
+        System.out.println("dest :" + c.getDest());
+        ;
 
         int num = this.building.numberOfElevetors();
         double min = timeToSrc(0, c);
         int best_ele = 0;
+
+        System.out.println("pos :" + this.building.getElevetor(best_ele).getPos());
+        System.out.println("state of elevator "  + " :" + this.building.getElevetor(best_ele).getState());
         for (int i = 1; i < num; i++) {
+            System.out.println("pos of the elevator " +i +" : " + this.building.getElevetor(i).getPos());
+            System.out.println("state of elevator " + i + " :" + this.building.getElevetor(i).getState());
             if (min > timeToSrc(i, c)) {
                 min = timeToSrc(i, c);
                 best_ele = i;
             }
         }
+        System.out.println("pos :" + this.building.getElevetor(best_ele).getPos());
+
+      //  if (c.getSrc()<c.getDest() && this.building.getElevetor(best_ele).getState()== 1)
+        //    this.building.getElevetor(best_ele).getState()
 
         this.E_List.get(best_ele).setFloor(c.getSrc());
         this.E_List.get(best_ele).push();
+        System.out.println("the chosen elevator is :" +best_ele);
         return best_ele;
 
     }
@@ -86,6 +102,8 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public void cmdElevator(int elev) {
+
+
         if (!_firstTime[elev] && !E_List.get(elev).queue.isEmpty()) {
             Elevator curr = this.building.getElevetor(elev);
             int pos = curr.getPos();
