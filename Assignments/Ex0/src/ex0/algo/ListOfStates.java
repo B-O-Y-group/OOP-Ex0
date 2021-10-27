@@ -36,6 +36,7 @@ public class ListOfStates {
     }
 
     public void add(int elev, String state) {
+        System.out.println(elev + state);
         if (!inList(elev))
             switch (state) {
                 case "UP" -> {

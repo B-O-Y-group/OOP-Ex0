@@ -37,21 +37,21 @@ public class FloorQueue {
     }
 
 
-    public void push() {
+    public void push(int src) {
         System.out.println("first" + queue.toString());
-        if (!queue.isEmpty() && !queue.contains(floor)) {
+        if (!queue.isEmpty() && !queue.contains(src)) {
             boolean added = false;
             for (int i = 0; i < queue.size() && !added; i++) {
-                if (range(floor, pos) < range(queue.get(i), pos)) {
-                    queue.add(i, floor);
+                if (range(src, pos) < range(queue.get(i), pos)) {
+                    queue.add(i, src);
                     added = true;
                 }
             }
             if (!added) {
-                queue.addLast(floor);
+                queue.addLast(src);
             }
         } else {
-            queue.addFirst(floor);
+            queue.addFirst(src);
         }
 
         System.out.println(queue.toString());

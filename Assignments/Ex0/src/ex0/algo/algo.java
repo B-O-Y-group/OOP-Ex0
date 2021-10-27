@@ -46,7 +46,7 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
-        return bestElevator(E_States, c.getType(), c);
+        int best_ele = bestElevator(E_States, c.getType(), c);
 
 
        /* System.out.println("get time :" + c.getTime(c.getState()));
@@ -78,12 +78,14 @@ public class algo implements ElevatorAlgo {
 //        this.E_List.get(best_ele).setFloor(c.getSrc());
 //        this.E_List.get(best_ele).push();
 //        System.out.println("the chosen elevator is :" + best_ele);
-
+        this.E_List.get(best_ele).push(c.getSrc());
+        this.E_List.get(best_ele).push(c.getDest());
+        return best_ele;
     }
 
     public int bestElevator(ListOfStates l, int state, CallForElevator c) {
         int best_ele = 0;
-        if (state == -1) {
+        if (state == -1 && !l.getDOWN().isEmpty()) {
             double best = timeCalc(l.getDOWN().get(0), c);
             for (int i = 1; i < l.getDOWN().size(); i++) {
                 if (timeCalc(l.getDOWN().get(i), c) < best) {
@@ -91,7 +93,7 @@ public class algo implements ElevatorAlgo {
                     best_ele = i;
                 }
             }
-        } else if (state == 1) {
+        } else if (state == 1 && !l.getUP().isEmpty()) {
             double best = timeCalc(l.getUP().get(0), c);
             for (int i = 1; i < l.getUP().size(); i++) {
                 if (timeCalc(l.getUP().get(i), c) < best) {
@@ -100,11 +102,13 @@ public class algo implements ElevatorAlgo {
                 }
             }
         }
-        double best = timeCalc(l.getLEVEL().get(0), c);
-        for (int i = 1; i < l.getLEVEL().size(); i++) {
-            if (timeCalc(l.getLEVEL().get(i), c) < best) {
-                best = timeCalc(l.getLEVEL().get(i), c);
-                best_ele = i;
+        if (!l.getLEVEL().isEmpty()) {
+            double best = timeCalc(l.getLEVEL().get(0), c);
+            for (int i = 1; i < l.getLEVEL().size(); i++) {
+                if (timeCalc(l.getLEVEL().get(i), c) < best) {
+                    best = timeCalc(l.getLEVEL().get(i), c);
+                    best_ele = i;
+                }
             }
         }
         return best_ele;
@@ -121,28 +125,37 @@ public class algo implements ElevatorAlgo {
         int num_to_src = 0;
         int des_index = 0;
         int num_to_des = 0;
-        for (int i = 0; i < this_q.size(); i++) { // how many stops in the way to the src.
-            if (this_q.get(i) < c.getSrc()) {
-                num_to_src++;
-            } else if (this_q.get(i) == c.getSrc()) {
-                num_to_src = i;
-                des_index = i + 1;
-                break;
-            } else {
-                num_to_src = i;
-                des_index = i;
-                break;
-            }
-        }
+        int des_range = Math.abs(c.getDest() - c.getSrc());
         int src_range = Math.abs(curr.getPos() - c.getSrc());
-        int des_range = Math.abs(c.getDest() - this_q.get(des_index));
-        for (int j = des_index; j < q_size + 1; j++) {
-            if (this_q.get(j) < c.getDest()) {
-                num_to_des++;
-            } else if (this_q.get(j) >= c.getDest()) {
-                num_to_des = j;
-                break;
+        if (!this_q.isEmpty()) {
+            for (int i = 0; i < this_q.size(); i++) { // how many stops in the way to the src.
+                if (this_q.get(i) < c.getSrc()) {
+                    num_to_src++;
+                } else if (this_q.get(i) == c.getSrc()) {
+                    num_to_src = i;
+                    if (i == this_q.size() - 1) {
+                        des_index = i;
+                    } else {
+                        des_index = i + 1;
+                    }
+                    break;
+                } else {
+                    num_to_src = i;
+                    des_index = i;
+                    break;
+                }
             }
+
+
+            for (int j = des_index; j < q_size; j++) {
+                if (this_q.get(j) < c.getDest()) {
+                    num_to_des++;
+                } else if (this_q.get(j) >= c.getDest()) {
+                    num_to_des = j;
+                    break;
+                }
+            }
+            des_range = Math.abs(c.getDest() - this_q.get(des_index));
         }
         double total_src_speed = (src_range / curr.getSpeed());
         double total_des_speed = (des_range / curr.getSpeed());
@@ -182,8 +195,7 @@ public class algo implements ElevatorAlgo {
                         curr.stop(first_F);
                     }
                 }
-            }
-            else {
+            } else {
                 System.out.println("on swap");
                 E_States.swap(elev, ListOfStates.findState(elev), "LEVEL");
             }
@@ -195,8 +207,9 @@ public class algo implements ElevatorAlgo {
                 Elevator curr = this.getBuilding().getElevetor(elev);
                 int floor = rand(min, max);
                 String state = dir(curr.getPos() - floor);
-                E_States.add(elev, state);
+                E_States.add(i, state);
                 curr.goTo(floor);
+                System.out.println("Down: "+E_States.getDOWN().size()+" UP: "+E_States.getUP().size()+" LEVEL: "+ E_States.getLEVEL().size());
             }
         }
     }
