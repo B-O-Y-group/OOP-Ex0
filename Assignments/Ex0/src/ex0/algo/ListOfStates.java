@@ -67,8 +67,11 @@ public class ListOfStates {
         if (!dictionary(state1).contains(elev)) {
             System.err.println("Wrong State");
         } else {
+            System.out.println("swap to: " + state2);
+            System.out.println("curr STATE " + findState(elev));
             dictionary(state1).remove(dictionary(state1).indexOf(elev));
             dictionary(state2).add(elev);
+            System.out.println("curr STATE " + findState(elev));
         }
     }
 
