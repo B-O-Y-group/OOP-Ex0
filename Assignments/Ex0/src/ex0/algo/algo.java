@@ -14,7 +14,7 @@ public class algo implements ElevatorAlgo {
     //public int direction;
     int allo;
     private ArrayList<FloorQueue> E_List;
-    private boolean[] _firstTime;
+    private boolean _firstTime;
     private ListOfStates E_States;
 
 
@@ -24,8 +24,9 @@ public class algo implements ElevatorAlgo {
         E_States = new ListOfStates();
         // this.direction = UP;
         allo = 0;
-        _firstTime = new boolean[building.numberOfElevetors()];
-        Arrays.fill(_firstTime, true);
+        _firstTime = true;
+//        _firstTime = new boolean[building.numberOfElevetors()];
+//        for(int i=0;i<_firstTime.length;i++) {_firstTime[i] = true;}
         for (int i = 0; i < b.numberOfElevetors(); i++) {
             FloorQueue e = new FloorQueue(this.building.getElevetor(i));
             E_List.add(e);
@@ -45,7 +46,7 @@ public class algo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
-        
+        return bestElevator(E_States, c.getType(), c);
 
 
        /* System.out.println("get time :" + c.getTime(c.getState()));
@@ -77,7 +78,36 @@ public class algo implements ElevatorAlgo {
 //        this.E_List.get(best_ele).setFloor(c.getSrc());
 //        this.E_List.get(best_ele).push();
 //        System.out.println("the chosen elevator is :" + best_ele);
-        return -1;
+
+    }
+
+    public int bestElevator(ListOfStates l, int state, CallForElevator c) {
+        int best_ele = 0;
+        if (state == -1) {
+            double best = timeCalc(l.getDOWN().get(0), c);
+            for (int i = 1; i < l.getDOWN().size(); i++) {
+                if (timeCalc(l.getDOWN().get(i), c) < best) {
+                    best = timeCalc(l.getDOWN().get(i), c);
+                    best_ele = i;
+                }
+            }
+        } else if (state == 1) {
+            double best = timeCalc(l.getUP().get(0), c);
+            for (int i = 1; i < l.getUP().size(); i++) {
+                if (timeCalc(l.getUP().get(i), c) < best) {
+                    best = timeCalc(l.getUP().get(i), c);
+                    best_ele = i;
+                }
+            }
+        }
+        double best = timeCalc(l.getLEVEL().get(0), c);
+        for (int i = 1; i < l.getLEVEL().size(); i++) {
+            if (timeCalc(l.getLEVEL().get(i), c) < best) {
+                best = timeCalc(l.getLEVEL().get(i), c);
+                best_ele = i;
+            }
+        }
+        return best_ele;
 
     }
 
@@ -96,7 +126,7 @@ public class algo implements ElevatorAlgo {
                 num_to_src++;
             } else if (this_q.get(i) == c.getSrc()) {
                 num_to_src = i;
-                des_index = i+1;
+                des_index = i + 1;
                 break;
             } else {
                 num_to_src = i;
@@ -106,19 +136,18 @@ public class algo implements ElevatorAlgo {
         }
         int src_range = Math.abs(curr.getPos() - c.getSrc());
         int des_range = Math.abs(c.getDest() - this_q.get(des_index));
-        for (int j = des_index; j < q_size + 1 ; j++) {
+        for (int j = des_index; j < q_size + 1; j++) {
             if (this_q.get(j) < c.getDest()) {
                 num_to_des++;
-            }
-            else if (this_q.get(j) >= c.getDest()) {
+            } else if (this_q.get(j) >= c.getDest()) {
                 num_to_des = j;
                 break;
             }
         }
-        double total_src_speed = (src_range/curr.getSpeed());
-        double total_des_speed = (des_range/curr.getSpeed());
-        double total_src = total_src_speed + (num_to_src*floor_time);
-        double total_des = total_des_speed + (num_to_des*floor_time);
+        double total_src_speed = (src_range / curr.getSpeed());
+        double total_des_speed = (des_range / curr.getSpeed());
+        double total_src = total_src_speed + (num_to_src * floor_time);
+        double total_des = total_des_speed + (num_to_des * floor_time);
 
         return (total_src + total_des);
 
@@ -138,13 +167,13 @@ public class algo implements ElevatorAlgo {
     public void cmdElevator(int elev) {
 
 
-        if (!_firstTime[elev] && !E_List.get(elev).queue.isEmpty()) {
+        if (!_firstTime) {
             Elevator curr = this.building.getElevetor(elev);
             int pos = curr.getPos();
-            int first_F = E_List.get(elev).queue.getFirst();
-            int last_F = E_List.get(elev).queue.getLast();
             if (curr.getState() == Elevator.LEVEL) {
                 if (!E_List.get(elev).queue.isEmpty()) {
+                    int first_F = E_List.get(elev).queue.getFirst();
+                    int last_F = E_List.get(elev).queue.getLast();
                     if (E_List.get(elev).queue.size() == 1) {
                         curr.goTo(first_F);
                     } else {
@@ -153,19 +182,20 @@ public class algo implements ElevatorAlgo {
                         curr.stop(first_F);
                     }
                 }
-                else {
-                    //ListOfStates.swap(E_List.get(elev).setDirection(0));
-                }
+            }
+            else {
+                System.out.println("on swap");
+                E_States.swap(elev, ListOfStates.findState(elev), "LEVEL");
             }
 
         } else {
-            _firstTime[elev] = false;
+            _firstTime = false;
             int min = this.building.minFloor(), max = this.building.maxFloor();
             for (int i = 0; i < this.building.numberOfElevetors(); i++) {
                 Elevator curr = this.getBuilding().getElevetor(elev);
                 int floor = rand(min, max);
-                String state = dir(curr.getPos()- floor);
-                E_States.add(elev,state);
+                String state = dir(curr.getPos() - floor);
+                E_States.add(elev, state);
                 curr.goTo(floor);
             }
         }
@@ -174,8 +204,7 @@ public class algo implements ElevatorAlgo {
     public static String dir(int range) {
         if (range > 0) {
             return "DOWN";
-        }
-        else if (range < 0) {
+        } else if (range < 0) {
             return "UP";
         }
         return "LEVEL";

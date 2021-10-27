@@ -3,6 +3,7 @@ package ex0.algo;
 import java.util.ArrayList;
 
 public class ListOfStates {
+
     private static ArrayList<Integer> UP, DOWN, LEVEL, ERROR;
 
 
@@ -14,24 +15,24 @@ public class ListOfStates {
     }
 
     public ArrayList<Integer> dictionary(String state) {
-            switch (state) {
-                case "UP" -> {
-                    return UP;
-                }
-                case "DOWN" -> {
-                    return DOWN;
-                }
-                case "LEVEL" -> {
-                    return LEVEL;
-                }
-                case "ERROR" -> {
-                    return ERROR;
-                }
-                default -> {
-                    System.out.println("Not valid state");
-                }
+        switch (state) {
+            case "UP" -> {
+                return UP;
             }
-            return ERROR;
+            case "DOWN" -> {
+                return DOWN;
+            }
+            case "LEVEL" -> {
+                return LEVEL;
+            }
+            case "ERROR" -> {
+                return ERROR;
+            }
+            default -> {
+                System.out.println("dictionary - Not valid state");
+            }
+        }
+        return ERROR;
     }
 
     public void add(int elev, String state) {
@@ -62,8 +63,7 @@ public class ListOfStates {
     public void swap(int elev, String state1, String state2) {
         if (!dictionary(state1).contains(elev)) {
             System.err.println("Wrong State");
-        }
-        else {
+        } else {
             dictionary(state1).remove(dictionary(state1).indexOf(elev));
             dictionary(state2).add(elev);
         }
@@ -71,6 +71,35 @@ public class ListOfStates {
 
     public static boolean inList(int elev) {
         return UP.contains(elev) || DOWN.contains(elev) || LEVEL.contains(elev) || ERROR.contains(elev);
+    }
+
+    public static String findState(int elev) {
+        if (!inList(elev)) {
+            return "wrong state";
+        }
+        if (UP.contains(elev)) {
+            return "UP";
+        }
+        if (DOWN.contains(elev)) {
+            return "DOWN";
+        }
+        return "LEVEL";
+    }
+
+    public ArrayList<Integer> getUP() {
+        return UP;
+    }
+
+    public ArrayList<Integer> getDOWN() {
+        return DOWN;
+    }
+
+    public ArrayList<Integer> getLEVEL() {
+        return LEVEL;
+    }
+
+    public ArrayList<Integer> getERROR() {
+        return ERROR;
     }
 
 }
