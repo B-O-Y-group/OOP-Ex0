@@ -21,6 +21,9 @@ public class FloorQueue {
         this.floor = new_src;
     }
 
+    public void removeTheFirst() {
+        queue.remove(0);
+    }
 
     public static int range(int floor, int pos) {
         return Math.abs(floor - pos);
@@ -37,24 +40,26 @@ public class FloorQueue {
     }
 
 
-    public void push() {
+    public void push(int src) {
         System.out.println("first" + queue.toString());
-        if (!queue.isEmpty() && !queue.contains(floor)) {
-            boolean added = false;
-            for (int i = 0; i < queue.size() && !added; i++) {
-                if (range(floor, pos) < range(queue.get(i), pos)) {
-                    queue.add(i, floor);
-                    added = true;
+        if (!queue.contains(src)) {
+            if (!queue.isEmpty()) {
+                boolean added = false;
+                for (int i = 0; i < queue.size() && !added; i++) {
+                    if (range(src, pos) < range(queue.get(i), pos)) {
+                        queue.add(i, src);
+                        added = true;
+                    }
                 }
+                if (!added) {
+                    queue.addLast(src);
+                }
+            } else {
+                queue.addFirst(src);
             }
-            if (!added) {
-                queue.addLast(floor);
-            }
-        } else {
-            queue.addFirst(floor);
         }
 
-        System.out.println(queue.toString());
+        System.out.println("queue " + queue.toString());
     }
 
 
