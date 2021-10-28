@@ -52,5 +52,6 @@
     </orderEntry>
     <orderEntry type="library" name="Ex0_Simulator_V0.0 (2)" level="project" />
     <orderEntry type="library" name="gson-2.8.6" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
   </component>
 </module>

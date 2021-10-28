@@ -8,13 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BOYAlgo implements ElevatorAlgo {
-     public Building building;
-  public   int num_E;
+    public Building building;
+    public int num_E;
     private ArrayList<CallForElevator>[] E_Call;
 
     public BOYAlgo(Building b) {
         this.building = b;
+        this.num_E = this.building.numberOfElevetors();
         this.E_Call = new ArrayList[num_E];
+        for (int i = 0; i < num_E; i++) {
+            this.E_Call[i] = new ArrayList<>();
+        }
+        System.out.println(this.E_Call.length);
     }
 
 
@@ -36,7 +41,7 @@ public class BOYAlgo implements ElevatorAlgo {
             ArrayList<Integer> UP = new ArrayList<>();
             for (int i = 0; i < num_E; i++) {
                 if (building.getElevetor(i).getState() == 1 && this.building.getElevetor(i).getPos() < c.getSrc()) {
-                    if (E_Call[this.building.getElevetor(i).getID()].get(this.building.getElevetor(i).getID()).getDest() < c.getSrc())
+                    if (E_Call[this.building.getElevetor(i).getID()].get(0).getDest() < c.getSrc())
                         UP.add(this.building.getElevetor(i).getID());
 
                 }
@@ -57,7 +62,7 @@ public class BOYAlgo implements ElevatorAlgo {
             boolean flag = true;
             for (int i = 0; i < num_E; i++) {
                 if (building.getElevetor(i).getState() == -1 && this.building.getElevetor(i).getPos() > c.getSrc()) {
-                    if (E_Call[this.building.getElevetor(i).getID()].get(E_Call[ans].size() - 1).getDest() > c.getSrc())
+                    if (E_Call[this.building.getElevetor(i).getID()].get(0).getDest() > c.getSrc())
                         DOWN.add(this.building.getElevetor(i).getID());
                 }
             }
@@ -111,16 +116,18 @@ public class BOYAlgo implements ElevatorAlgo {
     @Override
     public void cmdElevator(int elev) {
         Elevator curr = this.building.getElevetor(elev);
-        if (E_Call[elev].get(0).getState() == 1 && curr.getState() == Elevator.LEVEL) {
-            curr.goTo(E_Call[elev].get(0).getSrc());
-        }
-        if (E_Call[elev].get(0).getState() == 2 && curr.getState() == Elevator.LEVEL) {
-            curr.goTo(E_Call[elev].get(0).getDest());
-        }
-        if (E_Call[elev].get(0).getState() == 3 && curr.getState() == Elevator.LEVEL) {
-            E_Call[elev].remove(0);
-            if (E_Call[elev].size() > 0) {
+        if (!E_Call[elev].isEmpty()) {
+            if (E_Call[elev].get(0).getState() == 1 && curr.getState() == Elevator.LEVEL) {
                 curr.goTo(E_Call[elev].get(0).getSrc());
+            }
+            if (E_Call[elev].get(0).getState() == 2 && curr.getState() == Elevator.LEVEL) {
+                curr.goTo(E_Call[elev].get(0).getDest());
+            }
+            if (E_Call[elev].get(0).getState() == 3 && curr.getState() == Elevator.LEVEL) {
+                E_Call[elev].remove(0);
+                if (E_Call[elev].size() > 0) {
+                    curr.goTo(E_Call[elev].get(0).getSrc());
+                }
             }
         }
     }
