@@ -4493,4 +4493,4 @@
 3599.0,Elevator call,3598.719509318126,29,-7,1,6, got allocated to elevator, 6
 3599.0, elevID,6,  pos,0,  cmd, goto,29
 3600.0,************* Simulation Ended ************
-Code Owners,123456789,  Case,9,  Total waiting time: 295706.34007431194,  average waiting time per call: 295.7063400743119,  unCompleted calls,107,  certificate, -64885952851
+Code Owners,206795841,209011840,209496041,  Case,9,  Total waiting time: 295706.34007431194,  average waiting time per call: 295.7063400743119,  unCompleted calls,107,  certificate, -64701966343

@@ -9,20 +9,23 @@ import java.util.List;
 
 public class BOYAlgo implements ElevatorAlgo {
     public Building building;
-    public int num_E;
+    private final int num_E;
     private ArrayList<CallForElevator>[] E_Call;
+    private ArrayList<Integer> fast_el;
 
     public BOYAlgo(Building b) {
+        fast_el = new ArrayList<>();
         this.building = b;
+        for (int i = 0; i < building.numberOfElevetors(); i++) {
+            if (this.building.getElevetor(i).getSpeed() > 5) {
+                fast_el.add(this.building.getElevetor(i).getID());
+            }
+        }
         this.num_E = this.building.numberOfElevetors();
         this.E_Call = new ArrayList[num_E];
         for (int i = 0; i < num_E; i++) {
             this.E_Call[i] = new ArrayList<>();
         }
-
-
-
-        System.out.println(this.E_Call.length);
     }
 
 
@@ -38,13 +41,14 @@ public class BOYAlgo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
+
         int ans = 0;
         int type = c.getType();
 
-        if (type == 1 ) {
+        if (type == 1) {
             ArrayList<Integer> UP = new ArrayList<>();
             for (int i = 0; i < num_E; i++) {
-                if (building.getElevetor(i).getState() == 1 ) {
+                if (building.getElevetor(i).getState() == 1) {
                     if (E_Call[this.building.getElevetor(i).getID()].get(0).getDest() <= c.getSrc())
                         UP.add(this.building.getElevetor(i).getID());
 
@@ -83,13 +87,10 @@ public class BOYAlgo implements ElevatorAlgo {
         for (int i = 0; i < num_E; i++) {
             if (building.getElevetor(i).getState() == 0) {
                 LEVEL.add(this.building.getElevetor(i).getID());
-                System.out.println("e ID " + this.building.getElevetor(i).getID());
             }
 
         }
         if (!LEVEL.isEmpty()) {
-            System.out.println("POSIBLEEEEE");
-            System.out.println("ANSSSS " + ans);
             for (int i = 0; i < LEVEL.size(); i++) {
                 if (timeCalc(ans, c) > timeCalc(LEVEL.get(i), c)) {
                     ans = LEVEL.get(i);
@@ -110,11 +111,9 @@ public class BOYAlgo implements ElevatorAlgo {
         double floorTime = speed + (curr.getStopTime() + curr.getStartTime() + curr.getTimeForOpen() + curr.getTimeForClose());
         int range = Math.abs(curr.getPos() - c.getSrc());
         if (!E_Call[ans].isEmpty()) {
-            System.out.println("state " + E_Call[ans].get(0).getState());
             time_to_src = c.getTime(E_Call[ans].get(0).getState());
 
         }
-        System.out.println(time_to_src);
         return (range / speed) + floorTime + time_to_src + E_Call[ans].size();
     }
 
@@ -124,31 +123,18 @@ public class BOYAlgo implements ElevatorAlgo {
         Elevator curr = this.building.getElevetor(elev);
         if (!E_Call[elev].isEmpty()) {
             if (E_Call[elev].get(0).getState() == 1 && curr.getState() == Elevator.LEVEL) {
-
                 curr.goTo(E_Call[elev].get(0).getSrc());
-            }
-            else if (E_Call[elev].get(0).getState() == 2 && curr.getState() == Elevator.LEVEL) {
+            } else if (E_Call[elev].get(0).getState() == 2 && curr.getState() == Elevator.LEVEL) {
                 curr.goTo(E_Call[elev].get(0).getDest());
-            }
-            else if (E_Call[elev].get(0).getState() == 3 && curr.getState() == Elevator.LEVEL) {
+            } else if (E_Call[elev].get(0).getState() == 3 && curr.getState() == Elevator.LEVEL) {
                 E_Call[elev].remove(0);
                 if (E_Call[elev].size() > 0) {
                     curr.goTo(E_Call[elev].get(0).getSrc());
                 }
 
-            }
-            else if (E_Call[elev].get(0).getState() == 0 && curr.getState() == Elevator.LEVEL) {
-                curr.goTo((int)(Math.random()*(building.maxFloor()-building.minFloor())*10));
+            } else if (E_Call[elev].get(0).getState() == 0 && curr.getState() == Elevator.LEVEL) {
+                curr.goTo((int) (Math.random() * (building.maxFloor() - building.minFloor()) * 10));
             }
         }
-    }
-
-    private static int rand(int min, int max) {
-        if(max<min) {throw new RuntimeException("ERR: wrong values for range max should be >= min");}
-        int ans = min;
-        double dx = max-min;
-        double r = Math.random()*dx;
-        ans = ans + (int)(r);
-        return ans;
     }
 }
