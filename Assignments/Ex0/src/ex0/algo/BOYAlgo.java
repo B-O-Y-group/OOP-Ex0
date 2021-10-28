@@ -17,7 +17,7 @@ public class BOYAlgo implements ElevatorAlgo {
         fast_el = new ArrayList<>();
         this.building = b;
         for (int i = 0; i < building.numberOfElevetors(); i++) {
-            if (this.building.getElevetor(i).getSpeed() > 5) {
+            if (this.building.getElevetor(i).getSpeed() >= 5) {
                 fast_el.add(this.building.getElevetor(i).getID());
             }
         }
@@ -41,7 +41,16 @@ public class BOYAlgo implements ElevatorAlgo {
 
     @Override
     public int allocateAnElevator(CallForElevator c) {
-
+        if (Math.abs(c.getSrc()-c.getDest()) > (building.maxFloor()- building.minFloor())/2 && !fast_el.isEmpty()) {
+            int ans = fast_el.get(0);
+            for (int i = 0; i < fast_el.size(); i++) {
+                if (timeCalc(ans,c) > timeCalc(fast_el.get(i),c)) {
+                    ans = fast_el.get(i);
+                }
+            }
+            E_Call[ans].add(c);
+            return ans;
+        }
         int ans = 0;
         int type = c.getType();
 
