@@ -17,8 +17,30 @@ public class FloorQueue {
 
     }
 
+    public void copy(LinkedList<Integer> E) {
+        E.addAll(queue);
+    }
+
     public void setFloor(int new_src) {
         this.floor = new_src;
+    }
+
+    public boolean removeObject(int o) {
+//        if (findIndex(o) == -1) {
+//            System.out.println("false! " + "src " + o + " queue " + queue.toString());
+//            return false;
+//        }
+        queue.remove(findIndex(o));
+        return true;
+    }
+
+    public int findIndex(int o) {
+        for (int j = 0; j < queue.size(); j++) {
+            if (queue.get(j) == o) {
+                return j;
+            }
+        }
+        return -1;
     }
 
     public void removeTheFirst() {
