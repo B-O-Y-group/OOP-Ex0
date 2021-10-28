@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_2/T2-ItaiLash/json" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_2/T2-ItaiLash/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_2/T2-ItaiLash/vehicle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -52,5 +53,6 @@
     </orderEntry>
     <orderEntry type="library" name="Ex0_Simulator_V0.0 (2)" level="project" />
     <orderEntry type="library" name="gson-2.8.6" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
   </component>
 </module>
